@@ -1,15 +1,25 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Monkey</title>
+    <link rel="stylesheet" href="../Monkey.css">
 </head>
 <body>
+    <div>
+        <h1>Você é Negro(Nigger)?</h1>
+    </div>
 
-<h1>Você é um Macaco?</h1>
+    <div id="quadro">
+        <button id="sim" onclick="abrirArquivo()">Sim</button>
+        <button id="nao" onclick="abrirArquivo()" onmouseover="mudarTexto(this)" onmouseout="voltarTexto(this)">Não</button>
+    </div>
+    <div id="footer">
+        <p>Todos os direitos reservados @GuiCava</p>
+    </div>
+</body>
 
-<button id="sim" onclick="abrirLinks()">Sim</button>
-<button id="nao" onclick="abrirLinks()" onmouseover="mudarTexto(this)" onmouseout="voltarTexto(this)">Não</button>
 
 <script>
     function mudarTexto(botao) {
@@ -20,15 +30,8 @@
         botao.textContent = "Não";
     }
 
-    function abrirLinks() {
-        
-        window.open("https://guicava.github.io/Nigga.mp3", "_blank");
-
-        
+    function abrirArquivo() {
         window.open("https://guicava.github.io/Certeza.html", "_blank");
-
     }
 </script>
-
-</body>
 </html>
