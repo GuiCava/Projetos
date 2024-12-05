@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('https://img.freepik.com/fotos-gratis/vista-de-gorila-na-praia-no-verao_23-2151159987.jpg?semt=ais_hybrid');
+    background-size: cover;
+    background-repeat: no-repeat; 
+    display: grid;
+    grid-template-areas:
+         "header header header"
+         "main main main"
+         "main main main"
+         "footer footer footer";
+    grid-template-rows: 15% 75% 10%;
+    grid-template-columns: 30% 40% 30%;
+}
+
+div {
+    display: grid;
+    grid-area: header;
+    background: radial-gradient(red, darkred);
+    grid-column: 100%;
+}
+div h1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 50px;
+    text-align: center;
+}
+
+
+#quadro{
+    display: grid;
+    grid-area: main;
+    grid-column: 2;
+    height: 40%;
+    width: 100%;
+    background-color: gray;
+    margin-top: 200px;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+#sim {
+    background-color: #5C86A4;
+    border: solid;
+    border-color: #005898;
+    font-size: 40px;
+    font-style: italic;
+    color:white;
+    border-radius: 10px;
+    font-weight: 500;
+    cursor: pointer;
+    opacity: 100%;
+}
+
+#nao {
+    background-color: #5C86A4;
+    border: solid;
+    border-color: #005898;
+    font-size: 40px;
+    font-style: italic;
+    color:white;
+    border-radius: 10px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+#footer {
+    display: grid;
+    grid-area: footer;
+    width: 100%;
+    background-color: #808080;
+    color: darkgray;
+    justify-items: center;
+    margin-top: 10%;
+}
