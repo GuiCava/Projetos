@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monkey</title>
+    <link rel="stylesheet" href="../Monkey html/Monkey.css">
+</head>
+<body>
+    <header>
+        <div id="cabecalho">
+            <h1>You are Nigger?</h1>
+        </div>
+    </header>
+    <content>
+        <button id="sim" onclick="abrirArquivo()">Sim</button>
+        <img src="../Monkey html/img/download (3).jfif">
+        <button id="nao" onclick="abrirArquivo()" onmouseover="mudarTexto(this)" onmouseout="voltarTexto(this)">Não</button>
+    </content>
+    <footer>
+        <p>Todos os Direitos Reservados @GuiCava</p>
+    </footer>
+</body>
+
+<script>
+    function mudarTexto(botao) {
+        botao.textContent = "Sim";
+    }
+
+    function voltarTexto(botao) {
+        botao.textContent = "Não";
+    }
+
+    function abrirArquivo() {
+        window.open("https://guicava.github.io/Monkey html/Certeza.html", "_blank");
+    }
+</script>
+
+</html>
