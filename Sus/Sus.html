@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sistema Único de Saúde</title>
-    <link rel="stylesheet" href="../Sus/Sus.css">
+    <link rel="stylesheet" href="../Desktop/Sus.css">
 </head>
 <body>
     <header>
@@ -27,6 +27,7 @@
 
         <button id="button">Enviar</button>
 
+        <button onclick="erro()" id="erro">Suporte</button>
     </main>
 
     <div id="Dialog">
@@ -38,6 +39,9 @@
     </footer>
 </body>
     <script>
+        function erro() {
+            window.location.href="../erro.html"
+        }
         document.getElementById('button').addEventListener('click', function() {
             const sintomas = document.getElementById('sintomas');
             const valor = sintomas.value;
