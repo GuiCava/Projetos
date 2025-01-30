@@ -1,0 +1,23 @@
+body {
+    background: url('../LulaErro.svg') no-repeat center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    position: absolute;
+    color: white;
+    top: 56%;
+    left: 3%;
+    font-weight: 550;
+    font-family: arial;
+}
+
+a {
+
+    color: rgb(185, 0, 0);
+}
+
+
+
