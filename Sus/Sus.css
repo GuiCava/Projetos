@@ -60,6 +60,12 @@ main {
     
 }
 
+#erro {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
 footer {
     display: grid;
     width: 100%;
