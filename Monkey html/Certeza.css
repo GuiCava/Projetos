@@ -4,7 +4,7 @@
 }
 
 body {
-    background-image: url('../Desktop/Monkey html/img/download (1).jfif');
+    background-image: url('../Monkey html/img/download (1).jfif');
     display: grid;
     grid-template-rows: 2fr 14fr 1fr;
     height: 100vh;
