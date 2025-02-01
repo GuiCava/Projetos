@@ -1,0 +1,114 @@
+body {
+    display: grid;
+    background: linear-gradient(250deg, #be0000, #5f0000);
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+.Main {
+    background-color: rgb(138, 138, 138);
+    display: grid;
+    height: 550px;
+    width: 420px;
+    grid-column: 2;
+    justify-self: center;
+    grid-row: 2;
+    border-radius: 10px;
+    grid-template-columns: 320px 100px ;
+    grid-template-rows: 90px auto auto;
+}
+
+#Resultado {
+    display: grid;
+    background-color: white;
+    width: 400px;
+    height: 80px;
+    grid-column: span 2;
+    grid-row: 1;
+    justify-self: center;
+    align-self: center;
+    justify-items: center;
+    align-items: center;
+    border-radius: 10px;
+    font-size: 50px;
+    overflow-wrap: break-word
+}
+
+#Calcular {
+    display: grid;
+    grid-column: 1;
+    grid-row: end;
+}
+
+#simbol {
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
+    gap: 10px;
+    cursor: pointer;
+    border: none;
+}
+
+.simbolos {
+    display: grid;
+    grid-column: 2;
+    grid-row: span 2;
+    justify-items: center;
+    align-items: center;
+    height: auto;
+    width: auto;
+}
+
+#quadro {
+    display: grid;
+    grid-column: 1;
+    grid-row: 2;
+    width: auto;
+    height: auto;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 4;
+    justify-items: center;
+    align-items: center;
+}
+
+.number {
+    width: 90px;
+    height: 90px;
+    border-radius: 100px;
+    border: none;
+    cursor: pointer;
+}
+
+#number0 {
+    display: grid;
+    grid-column: span 2;
+    width: 200px;
+    align-items: center;
+    justify-items: center;
+}
+
+.calcular {
+    display: grid;
+    width: auto;
+    height: auto;
+}
+
+#Calcular {
+    cursor: pointer;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    padding: 0px;
+    justify-self: center;
+    align-self: center;
+    width: 300px;
+    height: 60.5px;
+    background-color: white;
+    border-radius: 10px;
+    border: none;
+}
