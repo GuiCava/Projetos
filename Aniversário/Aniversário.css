@@ -112,11 +112,14 @@ body {
 }
 
 #mensagem {
-    display: grid;
-    grid-row: 2;
+    display: block;
+    overflow-wrap: break-word;
+    white-space: normal;
     text-align: center;
-    grid-column: 1;
     font-size: 14px;
+    max-width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 #assinado {
