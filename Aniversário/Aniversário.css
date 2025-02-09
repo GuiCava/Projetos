@@ -13,13 +13,14 @@
     src: url('../Aniversário/KINKEE__.TTF');
 }
 
+
 body {
     background-image: linear-gradient(#ffffff, #dadada);
     display: grid;
     height: 100vh;
 }
 
-.Verso {
+.Final {
     display: grid;
     position: fixed;
     grid-template-rows: 115px auto 35px;
@@ -35,6 +36,25 @@ body {
     z-index: 1;
 }
 
+
+.Verso {
+    display: grid;
+    position: fixed;
+    grid-template-rows: 115px auto ;
+    grid-template-columns: 350px;
+    background-image: linear-gradient(#ffffff, #c0c0c0);
+    width: 350px;
+    height: 515.312px;
+    cursor: pointer;
+    justify-self: center;
+    align-self: center;
+    filter: drop-shadow(1px 1px 1px black);
+    box-shadow: inset 100px 20px 100px rgba(0,0,0,.15), 0 10px 100px rgba(0,0,0,0.3);
+    z-index: 2;
+}
+
+
+
 .Cartãoprincipal {
     display: grid;
     position: relative;
@@ -47,7 +67,7 @@ body {
     align-self: center;
     filter: drop-shadow(1px 1px 1px black);
     box-shadow: inset 100px 20px 100px rgba(0,0,0,.15), 0 10px 100px rgba(0,0,0,0.3);
-    z-index: 2;
+    z-index: 3;
 }
 
 #Feliz {
@@ -86,14 +106,25 @@ body {
 }
 
 .abrir {
-    animation: abrir 500ms;
+    animation: abrir 1s;
     animation-fill-mode: forwards;
 }
 
 .fechar {
-    animation: fechar 500ms;
+    animation: fechar 1s;
     animation-fill-mode: forwards;
 }
+
+.abrir2 {
+    animation: abrir2 1s;
+    animation-fill-mode: forwards;
+}
+
+.fechar2 {
+    animation: fechar2 1s;
+    animation-fill-mode: forwards;
+}
+
 
 #bolo {
     display: grid;
@@ -122,6 +153,17 @@ body {
     box-sizing: border-box;
 }
 
+#mensagem2 {
+    display: block;
+    overflow-wrap: break-word;
+    white-space: normal;
+    text-align: center;
+    font-size: 14px;
+    max-width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
 #assinado {
     display: grid;
     align-items: center;
@@ -132,173 +174,39 @@ body {
 
 
 @keyframes abrir {
-    0% {
-        transform: none;
+    from {
+        transform: translateX(0);
     }
-
-    5% {
-        right: 17.5px;
-    }
-
-    10% {
-        right: 35px;
-    }
-
-    15% {
-        right: 52.5px;
-    }
-
-    20% {
-        right: 70px;
-    }
-
-    25% {
-        right: 87.5px;
-    }
-
-    30% {
-        right: 105px;
-    }
-
-    35% {
-        right: 122.5px;
-    }
-
-    40% {
-        right: 140px;
-    }
-
-    45% {
-        right: 157.5px;
-    }
-
-    50% {
-        right: 175px;
-    }
-
-    55% {
-        right: 192.5px;
-    }
-
-    60% {
-        right: 210px;
-    }
-
-    65% {
-        right: 227.5px;
-    }
-
-    70% {
-        right: 245px;
-    }
-
-    75% {
-        right: 262.5px;
-    }
-
-    80% {
-        right: 280px;
-    }
-
-    85% {
-        right: 297.5px;
-    }
-
-    90% {
-        right: 315px;
-    }
-
-    95% {
-        right: 332.5px;
-    }
-
-    100% {
-        right: 350px;
+    to {
+        transform: translateX(-350px);
     }
 }
 
 @keyframes fechar {
-    0% {
-        right: 350px;
+    from {
+        transform: translateX(-350px);
     }
-
-    5% {
-        right: 332.5px;
+    to {
+        transform: translateX(0);
     }
+}
 
-    10% {
-        right: 315px;
+/*Funções 2*/
+
+@keyframes abrir2 {
+    from {
+        transform: translateX(0);
     }
-
-    15% {
-        right: 297.5px;
+    to {
+        transform: translateX(350px);
     }
+}
 
-    20% {
-        right: 280px;
+@keyframes fechar2 {
+    from {
+        transform: translateX(350px);
     }
-
-    25% {
-        right: 262.5px;
-    }
-
-    30% {
-        right: 245px;
-    }
-
-    35% {
-        right: 227.5px;
-    }
-
-    40% {
-        right: 210px;
-    }
-
-    45% {
-        right: 192.5px;
-    }
-
-    50% {
-        right: 175px;
-    }
-
-    55% {
-        right: 157.5px;
-    }
-
-    60% {
-        right: 140px;
-    }
-
-    65% {
-        right: 122.5px;
-    }
-
-    70% {
-        right: 105px;
-    }
-
-    75% {
-        right: 87.5px;
-    }
-
-    80% {
-        right: 70px;
-    }
-
-    85% {
-        right: 52.5px;
-    }
-
-    90% {
-        right: 35px;
-    }
-
-    95% {
-        right: 17.5px;
-    }
-
-    100% {
-        right: 0;
+    to {
+        transform: translateX(0);
     }
 }
