@@ -3,6 +3,10 @@
     margin: 0;
 }
 
+#wp-extension {
+    padding: 0;
+}
+
 @font-face {
     font-family: 'Love';
     src: url('../Aniversário/KINKEE__.TTF');
