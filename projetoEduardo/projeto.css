@@ -46,3 +46,12 @@ body {
     display: grid;
     grid-template-columns: 90px 300px 1fr;
 }
+
+.titulo {
+    font-family: georgia;
+    font-size: 1;
+    line-height: 1;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    grid-column: 1 / 4;
+}
