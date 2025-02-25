@@ -28,5 +28,21 @@ body {
 .menu li a {
     display: block;
     padding: 10px;
-    
+    margin-right: 10px;
+    color: #222;
+    text-decoration: none;
+    font-family: monospace;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    letter-spacing: .1em;
+}
+
+.grid-section {
+    grid-column: 2 / 4;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 90px 300px 1fr;
 }
