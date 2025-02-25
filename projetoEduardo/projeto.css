@@ -20,5 +20,5 @@ body {
 }
 
 p {
-    display: block;
+    overflow-wrap: break-word;
 }
