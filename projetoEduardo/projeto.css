@@ -138,5 +138,69 @@ body {
 
 .mapa {
     grid-column: 2;
-    
+}
+
+.dados {
+    grid-column: 3;
+}
+
+.dados li {
+    margin-bottom: 1rem;
+    font-family: helvetica, arial;
+}
+
+.dados li::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 10px;
+    margin-right: 10px;
+    background: #FB5;
+}
+
+.copy {
+    grid-column: 1/5;
+    margin-bottom: 2rem;
+    background: #fb5;
+}
+
+.copy p {
+    padding: 20px;
+    font-family: monospace;
+    font-weight: bold;
+}
+
+@media (max-widht: 700px) {
+    body {
+        grid-template-columns: 1fr;
+    }
+
+    .menu, .grid-section, .copy {
+        grid-column: 1;
+    }
+
+    .grid-section {
+        grid-template-columns: 100px 1fr;
+        grid-gap: 10px;
+    }
+
+    .animais-lista {
+        grid-column: 1;
+    }
+
+    .faq-lista, .dados, .mapa {
+        grid-column: 1/3;
+    }
+
+    .grid-section h1{
+        font-size: 3rem;
+    }
+
+    .menu {
+        margin-top: 0px;
+    }
+
+    .copy {
+        margin-bottom: 0px;
+    }
 }
