@@ -129,3 +129,14 @@ body {
     margin-right: 10px;
     background: #FB5;
 }
+
+.faq-lista dd{
+    font-family: helvetica, arial;
+    margin-bottom: .5rem;
+    margin-left: 30px;
+}
+
+.mapa {
+    grid-column: 2;
+    
+}
