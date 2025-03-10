@@ -19,7 +19,7 @@ body {
     grid-template-columns: 1fr 120px minmax(300px, 800px) 1fr;
 }
 
-.menu{
+.menu {
     grid-column: 3 / 5;
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -30,6 +30,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     padding: 10px;
+    /* justify-content: center; */
 }
 
 .menu li a {
@@ -42,7 +43,7 @@ body {
     font-weight: bold;
     text-transform: uppercase;
     font-size: 0.875rem;
-    letter-spacing: .1em;
+    letter-spacing: .1rem;
 }
 
 .grid-section {
@@ -55,7 +56,7 @@ body {
 }
 
 .titulo {
-    font-family: georgia;
+    font-family: Georgia;
     font-size: 1;
     line-height: 1;
     font-weight: 400;
@@ -63,17 +64,19 @@ body {
     grid-column: 1 / 4;
 }
 
-.animation h2::before {
+/* rem (Root EM) é uma unidade relativa de medida em CSS, baseada no tamanho da fonte raiz do documento (geralmente definida no html). Por exemplo, se o tamanho da fonte raiz for 16px, 1rem será equivalente a 16px.*/
+
+.animais h2::before {
     content: '';
     display: inline-block;
     width: 40px;
-    height: 40px;
+    height: 10px;
     margin-right: 10px;
     background: #fb5;
 }
 
 .animais p {
-    font-family: helvetica, arial;
+    font-family: Helvetica, arial;
     line-height: 1.2;
     margin-bottom: 1rem;
 }
@@ -93,20 +96,20 @@ body {
 }
 
 .animais-lista::-webkit-scrollbar-thumb {
-    background: #fb5;
+    background: #FB5;
     border-left: 4px solid #faf6ed;
     border-right: 4px solid #faf6ed;
-}
+} 
 
 .animais-lista::-webkit-scrollbar-track {
     background: #faf6ed;
 }
 
-.animais-descricao {
+.animais-descriscao {
     grid-column: 3;
 }
 
-.animais-descricao section {
+.animais-descriscao section {
     margin-bottom: 3rem;
 }
 
@@ -115,7 +118,7 @@ body {
     font-weight: bold;
     margin-top: 2rem;
     margin-bottom: .5rem;
-    color: #e54;
+    color: #E54
 }
 
 .faq-lista dt::before {
@@ -124,6 +127,5 @@ body {
     width: 20px;
     height: 10px;
     margin-right: 10px;
-    background: #fb5;
+    background: #FB5;
 }
-
