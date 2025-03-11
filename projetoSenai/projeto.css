@@ -23,7 +23,7 @@ body {
     grid-column: span 4;
     margin-top: 2rem;
     margin-bottom: 2rem;
-    background: rgb(39, 67, 196);
+    background: #2743c4;
 }
 
 .menu ul {
@@ -159,9 +159,9 @@ body {
 }
 
 .copy {
-    grid-column: 1/5;
+    grid-column: span 4;
     margin-bottom: 2rem;
-    background: #fb5;
+    background: #2743c4;
 }
 
 .copy p {
