@@ -165,6 +165,7 @@ body {
 }
 
 .copy p {
+    color: white;
     padding: 20px;
     font-family: monospace;
     font-weight: bold;
