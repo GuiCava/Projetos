@@ -20,7 +20,7 @@ body {
 }
 
 .menu {
-    grid-column: 3 / 5;
+    grid-column: span 4;
     margin-top: 2rem;
     margin-bottom: 2rem;
     background: rgb(39, 67, 196);
