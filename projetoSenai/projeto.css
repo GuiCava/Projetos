@@ -13,7 +13,7 @@ ul {
 }
 
 body {
-    background: #faf6ed;
+    background: linear-gradient(#3d59d1 #0066ff 205deg);
     color: #222;
     display: grid;
     grid-template-columns: 1fr 120px minmax(300px, 800px) 1fr;
@@ -23,7 +23,7 @@ body {
     grid-column: 3 / 5;
     margin-top: 2rem;
     margin-bottom: 2rem;
-    background: rgb(7, 36, 165);
+    background: rgb(39, 67, 196);
 }
 
 .menu ul {
