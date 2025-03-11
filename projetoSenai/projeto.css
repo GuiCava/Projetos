@@ -23,7 +23,7 @@ body {
     grid-column: 3 / 5;
     margin-top: 2rem;
     margin-bottom: 2rem;
-    background: #fb5;
+    background: rgb(7, 36, 165);
 }
 
 .menu ul {
