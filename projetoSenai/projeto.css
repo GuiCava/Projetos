@@ -160,6 +160,7 @@ body {
 .copy {
     grid-column: span 4;
     background: #2743c4;
+    text-align: center;
 }
 
 .copy p {
