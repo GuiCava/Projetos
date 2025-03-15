@@ -1,6 +1,8 @@
-body, h1, ul, li, p, dd, dt, dl {
-    margin: 0px;
-    padding: 0px;
+body {
+    margin: 0;
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 122px auto  auto  40px;
 }
 
 img {
@@ -8,63 +10,79 @@ img {
     max-width: 100%;
 }
 
-ul {
-    list-style: none;
-}
-
-body {
-    color: #222;
+header {
     display: grid;
-    grid-template-columns: 1fr 120px minmax(300px, 800px) 1fr;
+    grid-template-columns: 272px auto auto auto auto auto;
+    grid-row: 1;
+    height: 122px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    width: auto;
+    column-gap: 15px;
+    align-content: center;
 }
 
-.menu {
-    grid-column: span 4;
-    margin-bottom: 2rem;
+#Logo {
+    width: 272px;
 }
 
-.menu ul {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 10px;
-    justify-content: center;
-    gap: 6rem;
+#mapa {
+    display: grid;
+    grid-column: 2;
+    grid-row: 2;
+    width: 250px;
+    margin-bottom: 10px;
+    margin-left: 20px;
 }
 
-.menu li a {
-    display: block;
-    padding: 10px;
-    margin-right: 10px;
-    color: #ffffff;
-    text-decoration: none;
-    font-family: monospace;
+main {
+    display: grid;
+    padding-left: 60px;
+    padding-right: 60px;
+    grid-template-columns: auto auto;
+}
+
+.button {
+    background: none;
+    cursor: pointer;
+    font-size: 15px;
     font-weight: bold;
-    text-transform: uppercase;
-    font-size: 0.875rem;
-    letter-spacing: .1rem;
-}
-
-.grid-section {
-    grid-column: 2 / 4;
-    width: 100%;
-    box-sizing: border-box;
-    padding: 10px;
     display: grid;
-    grid-template-columns: 90px 300px 1fr;
+    align-content: center;
+    border: none;
+    font-family: monospace;
 }
 
-.titulo {
-    font-family: Georgia;
-    font-size: 1;
-    line-height: 1;
-    font-weight: 400;
-    margin-bottom: 1rem;
-    grid-column: 1 / 4;
-}
+.button:hover {
+    color: #2743c4;
+  }
 
 
 
-/* rem (Root EM) é uma unidade relativa de medida em CSS, baseada no tamanho da fonte raiz do documento (geralmente definida no html). Por exemplo, se o tamanho da fonte raiz for 16px, 1rem será equivalente a 16px.*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .animais h2::before {
     content: '';
@@ -105,45 +123,6 @@ body {
     background: #faf6ed;
 }
 
-.animais-descriscao {
-    grid-column: 3;
-}
-
-.animais-descriscao section {
-    margin-bottom: 3rem;
-}
-
-.faq-lista dt {
-    font-family: monospace;
-    font-weight: bold;
-    margin-top: 2rem;
-    margin-bottom: .5rem;
-    color: #E54
-}
-
-.faq-lista dt::before {
-    content: '';
-    display: inline-block;
-    width: 20px;
-    height: 10px;
-    margin-right: 10px;
-    background: rgb(39, 67, 196);
-}
-
-.faq-lista dd{
-    font-family: helvetica, arial;
-    margin-bottom: .5rem;
-    margin-left: 30px;
-}
-
-.mapa {
-    grid-column: 2;
-}
-
-.dados {
-    grid-column: 3;
-}
-
 .dados li {
     margin-bottom: 1rem;
     font-family: helvetica, arial;
@@ -158,17 +137,52 @@ body {
     background: rgb(39, 67, 196);
 }
 
-.copy {
-    grid-column: span 4;
-    background: #2743c4;
-    text-align: center;
+content {
+    display: grid;
+    grid-row: 3;
+    width: auto;
+    height: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #bfd6ad;
+    border-top: 20px solid #2743c4;
 }
 
-.copy p {
+footer {
+    display: grid;
+    grid-row: 4;
+    background: #2743c4;
+    text-align: center;
+    width: auto;
+    height: auto;
     color: white;
-    padding: 20px;
     font-family: monospace;
-    font-weight: bold;
+    align-content: center;
+}
+
+.Contato {
+    display: grid;
+    margin-left: 20px;
+}
+
+.Local {
+    display: grid;
+    grid-column: 2;
+    grid-row: 1;
+    margin-left: 20px;
+}
+
+.dados {
+    display: grid;
+    grid-column: 1;
+    grid-row: 2;
+}
+
+#contato {
+    display: grid;
+    grid-row: 3;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
 }
 
 @media (max-widht: 700px) {
