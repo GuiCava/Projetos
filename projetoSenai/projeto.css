@@ -13,7 +13,6 @@ ul {
 }
 
 body {
-    background: linear-gradient(#3d59d1, #0066ff, 205deg);
     color: #222;
     display: grid;
     grid-template-columns: 1fr 120px minmax(300px, 800px) 1fr;
@@ -22,14 +21,14 @@ body {
 .menu {
     grid-column: span 4;
     margin-bottom: 2rem;
-    background: rgb(39, 67, 196);
 }
 
 .menu ul {
     display: flex;
     flex-wrap: wrap;
     padding: 10px;
-    /* justify-content: center; */
+    justify-content: center;
+    gap: 6rem;
 }
 
 .menu li a {
@@ -62,6 +61,8 @@ body {
     margin-bottom: 1rem;
     grid-column: 1 / 4;
 }
+
+
 
 /* rem (Root EM) é uma unidade relativa de medida em CSS, baseada no tamanho da fonte raiz do documento (geralmente definida no html). Por exemplo, se o tamanho da fonte raiz for 16px, 1rem será equivalente a 16px.*/
 
