@@ -40,7 +40,15 @@ main {
     display: grid;
     padding-left: 60px;
     padding-right: 60px;
-    grid-template-columns: auto auto;
+
+}
+
+#menu {
+    display: grid;
+    width: auto;
+    height: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
 }
 
 .button {
@@ -100,13 +108,19 @@ main {
 }
 
 .animais-lista {
-    height: 370px;
+    display: grid;
     overflow-y: scroll;
     grid-column: 2;
+    height: 370px;
 }
 
 .animais-lista li {
     cursor: pointer;
+}
+
+.ativo {
+    display: grid;
+    grid-column: 2;
 }
 
 .animais-lista::-webkit-scrollbar {
@@ -136,6 +150,8 @@ main {
     margin-right: 10px;
     background: rgb(39, 67, 196);
 }
+
+
 
 content {
     display: grid;
@@ -225,7 +241,8 @@ footer {
 }
 
 .js-tabcontent section.ativo {
-    display: block !important;
+    display: grid !important;
+    grid-column: 2;
     animation: show .5s forwards;
 }
 
