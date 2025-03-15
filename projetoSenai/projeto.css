@@ -5,7 +5,10 @@ body {
     grid-template-rows: 122px auto  auto  40px;
 }
 
-
+#wp-extension {
+    display:none;
+    
+}
 
 header {
     display: grid;
