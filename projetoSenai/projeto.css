@@ -125,6 +125,11 @@ footer {
     margin-left: 20px;
 }
 
+.Infor {
+    display: none;
+    margin-left: 20px;
+}
+
 .Local {
     display: grid;
     grid-column: 2;
@@ -145,40 +150,80 @@ footer {
     grid-template-rows: auto auto;
 }
 
-@media (max-widht: 700px) {
+@media (max-width: 700px) {
     body {
-        grid-template-columns: 1fr;
+        display: block;
+        height: 100vh;
     }
 
-    .menu, .grid-section, .copy {
-        grid-column: 1;
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        text-align: center;
+        padding: 10px;
     }
 
-    .grid-section {
-        grid-template-columns: 100px 1fr;
-        grid-gap: 10px;
+    #Logo {
+        width: 80%;
+        max-width: 200px;
     }
 
-    .animais-lista {
-        grid-column: 1;
+    .button {
+        width: 100%;
+        text-align: center;
+        padding: 10px;
     }
 
-    .faq-lista, .dados, .mapa {
-        grid-column: 1/3;
+    main {
+        padding: 20px;
+        text-align: center;
     }
 
-    .grid-section h1{
-        font-size: 3rem;
+    .js-imagens img {
+        max-width: 100%;
+        height: auto;
     }
 
-    .menu {
-        margin-top: 0px;
+    content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        text-align: center;
     }
 
-    .copy {
-        margin-bottom: 0px;
+    #contato {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+    }
+
+    h1.Contato {
+        display: none;
+    }
+
+    h1.Local {
+        display: none;
+    }
+
+    h1.Infor {
+        display: flex;
+    }
+
+    .dados {
+        text-align: center;
+        padding: 10px;
+    }
+
+    footer {
+        font-size: 12px;
+        padding: 10px;
     }
 }
+
 
 .js .js-tabcontent section {
     display: none;
