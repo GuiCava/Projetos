@@ -1,91 +1,38 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Animais Fantásticos</title>
-    <script>document.documentElement.className += ' js';</script>
-    <link rel="stylesheet" type="text/css" href="../projetoEduardo/projeto.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogo de Adivinhação das Bandeiras</title>
+  <link rel="stylesheet" href="css/jogo.css">
 </head>
 <body>
-    <nav class="menu js-menu">
-        <ul>
-            <li><a href="#animais">Animais</a></li>
-            <li><a href="#faq">Faq</a></li>
-            <li><a href="#contato">Contato</a></li>
-            <li><a href="#">Cursos</a></li>
-        </ul>
-    </nav>
-    <section class="grid-section animais js-scroll" id="animais">
-        <h1 class="titulo">Animais Fantásticos</h1>
-        <ul class="animais-lista js-tabmenu">
-            <li><img src="img/imagem1.jpg"></li>
-            <li><img src="img/imagem2.jpg"></li>
-            <li><img src="img/imagem3.jpg"></li>
-            <li><img src="img/imagem4.jpg"></li>
-            <li><img src="img/imagem5.jpg"></li>
-            <li><img src="img/imagem6.jpg"></li>
-        </ul>
-        <div class="animais-descricao js-tabcontent">
-            <section>
-                <h2>Raposa</h2>
-                <p> A raposa é um mamífero da família Canidae, conhecida por sua inteligência e agilidade. Seu corpo é esguio, com uma pelagem densa e macia, que pode variar em cores, sendo mais comum em tons de vermelho, laranja e marrom, com uma barriga branca e, às vezes, manchas escuras nas pernas e no rosto. A cauda, uma das suas características mais marcantes, é longa e espessa, frequentemente com uma ponta branca.
-                </p>
-            </section>
-            <section>
-                <h2>Esquilo</h2>
-                <p> O esquilo é um pequeno mamífero da família Sciuridae, que inclui diversas espécies encontradas em diferentes partes do mundo. Eles são conhecidos por sua agilidade, inteligência e hábitos de armazenamento de alimentos.
-                </p>
-            </section>
-            <section>
-                <h2>Urso</h2>
-                <p> O urso é um grande mamífero da família Ursidae, conhecido por sua força, inteligência e habilidades de adaptação. Existem várias espécies de ursos espalhadas pelo mundo, vivendo em diferentes habitats, desde florestas densas até regiões geladas do Ártico.
-                </p>
-            </section>
-            <section>
-                <h2>Lobo</h2>
-                <p> O lobo é um mamífero da família Canidae, a mesma dos cães e raposas. O mais conhecido é o lobo-cinzento (Canis lupus), que é o maior membro dessa família. Lobos são animais sociais e vivem em grupos chamados alcateias, com uma hierarquia bem definida.
-                </p>
-            </section>
-            <section>
-                <h2>Macaco</h2>
-                <p> O macaco é um mamífero primata caracterizado por sua agilidade, inteligência e comportamento social complexo. Ele pertence à ordem Primates e pode ser encontrado em diversos habitats, como florestas tropicais, savanas e montanhas.
-                </p>
-            </section>
-            <section>
-                <h2>Leão</h2>
-                <p>O leão é um grande felino da família Felidae, conhecido por sua imponência e comportamento social. É um dos animais mais icônicos da África, embora também seja encontrado em algumas regiões da Ásia. O leão é frequentemente chamado de "rei da selva" devido à sua força e liderança no reino animal.
-                </p>
-            </section>
-        </div>
-    </section>
-    <section class="grid-section Faq js-scroll" id="faq">
-        <h1 class="Titulo">FAQ</h1>
-        <dl class="faq-lista js-accordion">
-            <dt>Qual a idade dos animais?</dt>
-            <dd>A idade varia de espécie para espécie...</dd>
-            <dt>Eles são fantásticos?</dt>
-            <dd>Sim, cada um possui características únicas...</dd>
-            <dt>Qual a diferença?</dt>
-            <dd>Cada animal tem sua própria adaptação...</dd>
-            <dt>Como proteger?</dt>
-            <dd>A preservação depende da conservação ambiental..</dd>
-        </dl>
-    </section>
-    <section class="grid-section contato js-scroll" id="contato">
-        <h1 class="titulo">Contato</h1>
-        <div class="mapa">
-            <img src="img/mapa.png" alt="">
-        </div>
-        <ul class="dados">
-            <li>eduardo.falabella@docente.senai.br</li>
-            <li>Av. Dr. Renato de Andrade Maia, 601</li>
-            <li>Guarulhos - SP</li> 
-        </ul>
-    </section>
-    <footer class="copy">
-        <p>Todos os direitos reservados.</p>
-    </footer>
-    <script src="projeto.js"></script>
+  <header>
+    <img src="img/LogoJogo.svg" id="LogoJogo">
+    <p id="score"> 0 </p>
+  </header>
+
+  <main>
+
+    <img id="flag" src="" alt="Bandeira" />
+
+    <div id="BOTOES">
+      <button class="option" class="optionEsquerda" id="Black" onclick="checkAnswer(this)"></button>
+      <button class="option" class="optionDireita" id="Red" onclick="checkAnswer(this)"></button>
+      <button class="option" class="optionEsquerda" id="Red" onclick="checkAnswer(this)"></button>
+      <button class="option" class="optionDireita" id="Black" onclick="checkAnswer(this)"></button>
+    </div>
+
+    <div class="correct-flags-container" id="BandeirasCertas">
+      <!-- As bandeiras acertadas aparecerão aqui -->
+    </div>
+
+  </main>
+
+  <footer>
+    <p>APLICAR FOOTER</p>
+  </footer>
+
+  <script src="javaScript/script.js"></script>
 </body>
 </html>
