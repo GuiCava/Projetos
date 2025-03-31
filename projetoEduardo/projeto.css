@@ -1,228 +1,132 @@
-body, h1, ul, li, p, dd, dt, dl {
-    margin: 0px;
-    padding: 0px;
-}
-
-img {
-    display: block;
-    max-width: 100%;
-}
-
-ul {
-    list-style: none;
+* {
+    padding: 0;
+    margin: 0;
 }
 
 body {
-    background: #faf6ed;
-    color: #222;
     display: grid;
-    grid-template-columns: 1fr 120px minmax(300px, 800px) 1fr;
+    height: 100vh;
+    grid-template-rows: 140px auto 220px;
 }
 
-.menu {
-    grid-column: 3 / 5;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    background: #fb5;
-}
-
-.menu ul {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 10px;
-    /* justify-content: center; */
-}
-
-.menu li a {
-    display: block;
-    padding: 10px;
-    margin-right: 10px;
-    color: #222;
-    text-decoration: none;
-    font-family: monospace;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: 0.875rem;
-    letter-spacing: .1rem;
-}
-
-.grid-section {
-    grid-column: 2 / 4;
-    width: 100%;
-    box-sizing: border-box;
-    padding: 10px;
+header {
     display: grid;
-    grid-template-columns: 90px 300px 1fr;
+    grid-row: 1;
+    background: linear-gradient(150deg, #FF002F, #79041A);
+    align-items: center;
+    padding-left: 30px;
+    grid-template-columns: auto auto;
+    padding-right: 200px;
 }
 
-.titulo {
-    font-family: Georgia;
-    font-size: 1;
-    line-height: 1;
-    font-weight: 400;
-    margin-bottom: 1rem;
-    grid-column: 1 / 4;
+#LogoJogo {
+    display: grid;
+    grid-column: 1;
+    width: 120px;
 }
 
-/* rem (Root EM) é uma unidade relativa de medida em CSS, baseada no tamanho da fonte raiz do documento (geralmente definida no html). Por exemplo, se o tamanho da fonte raiz for 16px, 1rem será equivalente a 16px.*/
-
-.animais h2::before {
-    content: '';
-    display: inline-block;
-    width: 40px;
-    height: 10px;
-    margin-right: 10px;
-    background: #fb5;
-}
-
-.animais p {
-    font-family: Helvetica, arial;
-    line-height: 1.2;
-    margin-bottom: 1rem;
-}
-
-.animais-lista {
-    height: 370px;
-    overflow-y: scroll;
+#score {
+    display: grid;
     grid-column: 2;
-}
-
-.animais-lista li {
-    cursor: pointer;
-}
-
-.animais-lista::-webkit-scrollbar {
-    width: 18px;
-}
-
-.animais-lista::-webkit-scrollbar-thumb {
-    background: #FB5;
-    border-left: 4px solid #faf6ed;
-    border-right: 4px solid #faf6ed;
-} 
-
-.animais-lista::-webkit-scrollbar-track {
-    background: #faf6ed;
-}
-
-.animais-descriscao {
-    grid-column: 3;
-}
-
-.animais-descriscao section {
-    margin-bottom: 3rem;
-}
-
-.faq-lista dt {
-    font-family: monospace;
+    justify-self: end;
     font-weight: bold;
-    margin-top: 2rem;
-    margin-bottom: .5rem;
-    color: #E54
+    color: white;
+    font-size: 25px;
 }
 
-.faq-lista dt::before {
-    content: '';
-    display: inline-block;
-    width: 20px;
-    height: 10px;
-    margin-right: 10px;
-    background: #FB5;
+main {
+    display: grid;
+    grid-row: 2;
+    grid-template-columns: 1fr 2.25fr 1fr;
+    grid-template-rows: 1fr 1fr;
 }
 
-.faq-lista dd{
-    font-family: helvetica, arial;
-    margin-bottom: .5rem;
-    margin-left: 30px;
-}
-
-.mapa {
+#BOTOES {
+    display: grid;
     grid-column: 2;
+    grid-row: 2;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    padding: 10px;
 }
 
-.dados {
-    grid-column: 3;
-}
-
-.dados li {
-    margin-bottom: 1rem;
-    font-family: helvetica, arial;
-}
-
-.dados li::before {
-    content: '';
-    display: inline-block;
-    width: 20px;
-    height: 10px;
-    margin-right: 10px;
-    background: #FB5;
-}
-
-.copy {
-    grid-column: 1/5;
-    margin-bottom: 2rem;
-    background: #fb5;
-}
-
-.copy p {
-    padding: 20px;
-    font-family: monospace;
+.option {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    width: 1fr;
+    height: 1fr;
+    color: white;
+    font-size: 30px;
     font-weight: bold;
+    border: none;
+    border-radius: 5px;
 }
 
-@media (max-widht: 700px) {
+#flag {
+    display: grid;
+    width: 347px;
+    height: 225px;
+    grid-column: 2;
+    grid-row: 1;
+    align-self: center;
+    justify-self: center;
+    border-radius: 8px;
+}
+
+#BandeirasCertas {
+    display: none;
+}
+
+#Black {
+    background-color: black;
+}
+
+#Red {
+    background-color: #FF002F;
+}
+
+.option:hover {
+    opacity: 0.75;
+}
+
+footer {
+    display: grid;
+    grid-row: 3;
+    background-color: #FF002F;
+    align-items: center;
+    justify-items: center;
+}
+
+@media (max-width: 885px) {
     body {
-        grid-template-columns: 1fr;
+        grid-template-rows: 120px 1fr auto;
+        width: 100vw;
+    }
+    #flag {
+        width: 287px;
+        height: 165px;
     }
 
-    .menu, .grid-section, .copy {
-        grid-column: 1;
+    header {
+        padding-right: 0;
     }
 
-    .grid-section {
-        grid-template-columns: 100px 1fr;
-        grid-gap: 10px;
+    #score {
+        display: grid;
+        justify-self: center;
     }
 
-    .animais-lista {
-        grid-column: 1;
+    main {
+        padding-top: 20px;
+        grid-template-rows: 0.5fr 1fr;
+        grid-row: 2;
     }
 
-    .faq-lista, .dados, .mapa {
-        grid-column: 1/3;
-    }
-
-    .grid-section h1{
-        font-size: 3rem;
-    }
-
-    .menu {
-        margin-top: 0px;
-    }
-
-    .copy {
-        margin-bottom: 0px;
+    #BOTOES {
+        grid-column: span 3;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
     }
 }
-
-.js .js-tabcontent section {
-    display: none
-}
-
-.js-tabcontent section.ativo {
-    display: block !important;
-    animation: show .5s forwards;
-}
-
-@keyframes show {
-    from {
-        opacity: 0;
-        transform: translate3d(-30px, 0, 0);
-    }
-
-    to {
-        opacity: 1;
-        transform: translate3d(0, 0, 0);
-    }
-}
-
