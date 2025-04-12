@@ -4,15 +4,17 @@
 }
 
 #wp-extension {
-    display:none;
-    
+    display:none; 
+}
+
+#BOTOES {
+    display: none;
 }
 
 @font-face {
     font-family: 'Love';
-    src: url('../Aniversário/KINKEE__.TTF');
+    src: url('KINKEE__.TTF');
 }
-
 
 body {
     background-image: linear-gradient(#ffffff, #dadada);
@@ -178,13 +180,13 @@ body {
         transform: translateX(0);
     }
     to {
-        transform: translateX(-350px);
+        transform: translateX(-352px);
     }
 }
 
 @keyframes fechar {
     from {
-        transform: translateX(-350px);
+        transform: translateX(-352px);
     }
     to {
         transform: translateX(0);
@@ -198,15 +200,71 @@ body {
         transform: translateX(0);
     }
     to {
-        transform: translateX(350px);
+        transform: translateX(352px);
     }
 }
 
 @keyframes fechar2 {
     from {
-        transform: translateX(350px);
+        transform: translateX(352px);
     }
     to {
         transform: translateX(0);
+    }
+}
+
+/* Media Query */
+
+@media (max-width: 1071px) {
+
+    .Final {
+        position: absolute;
+    }
+    
+    
+    .Verso {
+        position: absolute;
+    }
+    
+    .Cartãoprincipal {
+        position: absolute;
+    }
+    
+    @keyframes abrir {
+        from {
+            transform: translateY(0);
+        }
+        to {
+            transform: translateY(-518px);
+        }
+    }
+    
+    @keyframes fechar {
+        from {
+            transform: translateY(-518px);
+        }
+        to {
+            transform: translateY(0);
+        }
+    }
+    
+    /*Funções 2*/
+    
+    @keyframes abrir2 {
+        from {
+            transform: translateY(-518px);
+        }
+        to {
+            transform: translateY(518px);
+        }
+    }
+    
+    @keyframes fechar2 {
+        from {
+            transform: translateY(518px);
+        }
+        to {
+            transform: translateY(0);
+        }
     }
 }
