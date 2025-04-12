@@ -213,6 +213,10 @@ body {
 
 @media (max-width: 1071px) {
 
+    body {
+        background-color: none;
+    }
+    
     .Final {
         position: absolute;
     }
