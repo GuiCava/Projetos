@@ -13,7 +13,7 @@
 }
 
 body {
-    background-image: linear-gradient(#ffffff, #dadada);
+    background-color: linear-gradient(#ffffff, #dadada);
     display: grid;
     height: 100vh;
 }
