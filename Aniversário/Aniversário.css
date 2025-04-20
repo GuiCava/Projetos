@@ -18,10 +18,6 @@ body {
     height: 100vh;
 }
 
-#mensagem1 #mensagem2 {
-    font-size: clamp(14px, 2vw, 20px); /* 👈 aqui o ajuste responsivo */
-}
-
 .Final {
     display: grid;
     position: fixed;
@@ -63,7 +59,7 @@ body {
     grid-template-rows: auto auto auto;
     background-image: linear-gradient(#ffffff, #c0c0c0);
     width: 350px;
-    height: auto;
+    height: 515.312px;
     cursor: pointer;
     justify-self: center;
     align-self: center;
