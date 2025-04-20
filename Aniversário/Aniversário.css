@@ -221,7 +221,7 @@ body {
         position: absolute;
     }
     
-    #mensagem1 #mensagem2 {
+    .mensagemm {
         font-size: 10px;
     }
 
