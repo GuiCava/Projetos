@@ -18,6 +18,10 @@ body {
     height: 100vh;
 }
 
+#mensagem1 #mensagem2 {
+    font-size: clamp(14px, 2vw, 20px); /* 👈 aqui o ajuste responsivo */
+}
+
 .Final {
     display: grid;
     position: fixed;
@@ -145,7 +149,6 @@ body {
     overflow-wrap: break-word;
     white-space: normal;
     text-align: center;
-    font-size: 16px;
     max-width: 100%;
     padding: 20px;
     padding-top: 0;
@@ -157,7 +160,6 @@ body {
     overflow-wrap: break-word;
     white-space: normal;
     text-align: center;
-    font-size: 16px;
     max-width: 100%;
     padding: 20px;
     box-sizing: border-box;
