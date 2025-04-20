@@ -38,7 +38,7 @@ body {
 .Verso {
     display: grid;
     position: fixed;
-    grid-template-rows: 115px auto ;
+    grid-template-rows: 100px auto ;
     grid-template-columns: 350px;
     background-image: linear-gradient(#ffffff, #c0c0c0);
     width: 350px;
@@ -84,7 +84,7 @@ body {
     justify-items: center;
     text-align: center;
     font-size: 16px;
-    height: 115px;
+    height: 80px;
     padding-top: 20px;
     padding-left: 20px;
     padding-right: 20px;
@@ -140,14 +140,15 @@ body {
     padding-bottom: 20;
 }
 
-#mensagem {
+#mensagem1 {
     display: block;
     overflow-wrap: break-word;
     white-space: normal;
     text-align: center;
-    font-size: 14px;
+    font-size: 16px;
     max-width: 100%;
     padding: 20px;
+    padding-top: 0;
     box-sizing: border-box;
 }
 
@@ -156,7 +157,7 @@ body {
     overflow-wrap: break-word;
     white-space: normal;
     text-align: center;
-    font-size: 14px;
+    font-size: 16px;
     max-width: 100%;
     padding: 20px;
     box-sizing: border-box;
@@ -214,9 +215,10 @@ body {
 @media (max-width: 1071px) {
 
     body {
+        height: 100vh;
         background-color: white;
     }
-    
+
     .Final {
         position: absolute;
     }
