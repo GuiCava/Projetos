@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube - Assistindo Video</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="flex flex-col bg-[#F9F9F9]">
+    <!--Header-->
+    <header class="flex px-[8px] py-[16px] sticky top-0 z-3 bg-white w-full gap-x-10 items-center justify-between ">
+        <section class="flex w-[146px] h-[24px] items-center ml-2 sm:ml-6 mr-10 gap-7 md:mr-0">
+            <button class="cursor-pointer"><img src="img/menu.svg" class="hidden sm:inline"></button>
+            <img src="img/YTLogo.svg" class="w-[90px] h-[20px]"> 
+        </section>
+
+        <section class="flex items-center w-full max-w-[404px] border-[#CCCCCC] border-solid border-1 flex-grow justify-center h-[40px]">
+            <div class="flex flex-grow"></div>
+            <div class="flex justify-center cursor-pointer items-center bg-[#F8F8F8] h-full w-[60px]">
+                <img src="img/search.svg">
+            </div>
+        </section>
+
+        <section class="hidden md:flex items-center justify-between w-[130px] h-[34px] mr-2">
+            <img src="img/video.svg" class="cursor-pointer">
+            <img src="img/bell.svg" class="cursor-pointer">
+            <img src="img/Perfil.svg" class="rounded-full w-[34px] cursor-pointer">
+        </section>
+    </header>
+
+    <!--Main-->
+    <main class="flex justify-between pl-20">
+        <section class="flex flex-col flex-grow">
+            <img src="img/Nothing.svg" class=" lg:max-w-[952px] md:max-h-[537px]">
+            <h2 class="mt-4 text-[20px] font-semibold">Não sou nada...</h2>
+            <section class="flex justify-between justify-items-center items-center my-4">
+                <section class="flex  gap-x-12 items-center justify-items-center">
+                    <div class="flex w-[160px] h-[42px] gap-x-3.5">
+                        <img src="img/Cultura.svg" class="rounded-full w-[42px] cursor-pointer">
+                        <div class="felx flex-col w-full justify-center items-center">
+                            <h2 class="text-[14px] font-semibold">TV Cultura<br><span class="text-[14px] font-normal">2,72 mi inscritos</span></h2>
+                        </div>
+                    </div>
+                    <button class="flex justify-center items-center justify-self-end  bg-[#CC0000] text-white h-[40px] w-[159px] text-[14px] font-medium mr-2 cursor-pointer">
+                        INSCREVA-SE
+                    </button>
+                    <button class="flex gap-x-2 cursor-pointer">
+                        <img src="img/Like.svg">
+                        <h3 class="font-semibold text-[14px]">90 mil</h3>
+                    </button>
+
+                    <button class="flex gap-x-2 cursor-pointer">
+                        <img src="img/Dislike.svg">
+                        <h3 class="font-semibold text-[14px]">Não gostei</h3>
+                    </button>
+
+                    <button class="flex gap-x-2 cursor-pointer">
+                        <img src="img/share.svg">
+                        <h3 class="font-semibold text-[14px]">Compartilhar</h3>
+                    </button>
+
+                    <button class="flex gap-x-2 cursor-pointer">
+                        <img src="img/download.svg">
+                        <h3 class="font-semibold text-[14px]">Download</h3>
+                    </button>
+                </section>
+            </section>
+            <h2 class="text-[14px] font-semibold mb-4">2,1 mi de visualizações há 12 anos</h2>
+            <p class="text-[14px] text-[#515151]">
+                Autor: Fernando Pessoa
+                <br><br>
+                Programa do dia 29/08/2004.
+            </p>
+        </section>
+        <section class="flex flex-col gap-y-4">
+            <div class="flex w-full gap-x-2">
+                <img src="img/Thumb.svg" class="w-auto h-[101px]">
+                <h3 class="font-semibold text-[14px] w-[196px]">
+                    Geração Tech Unimed - BH - Ciência de Dados
+                    <span class="text-[12px] font-normal text-[#515151]">DigitalInnovationOne</span>
+                    <br>
+                    <span class="text-[12px] font-normal text-[#515151]">2,1 mil visualizações</span>
+                    <br>
+                    <span class="text-[12px] font-normal text-[#515151]">Transmitido há 2 dias</span>
+                </h3>
+            </div>
+
+            <div class="flex w-full gap-x-2">
+                <img src="img/Thumb2.svg" class="w-auto h-[101px]">
+                <h3 class="font-semibold text-[14px] w-[196px]">
+                    Scrum Talks
+                    <span class="text-[12px] font-normal text-[#515151]">DigitalInnovationOne</span>
+                    <br>
+                    <span class="text-[12px] font-normal text-[#515151]">1,6 mil visualizações</span>
+                    <br>
+                    <span class="text-[12px] font-normal text-[#515151]">Transmitido há 3 dias</span>
+                </h3>
+            </div>
+
+            <div class="flex w-full gap-x-2">
+                <img src="img/Thumb3.svg" class="w-auto h-[101px]">
+                <h3 class="font-semibold text-[14px] w-[196px]">
+                    Machine Learning Avançado - Fast Track
+                    <span class="text-[12px] font-normal text-[#515151]">DigitalInnovationOne</span>
+                    <br>
+                    <span class="text-[12px] font-normal text-[#515151]">1,7 mil visualizações</span>
+                    <br>
+                    <span class="text-[12px] font-normal text-[#515151]">Transmitido há 4 dias</span>
+                </h3>
+            </div>
+
+            <div class="flex w-full gap-x-2">
+                <img src="img/Thumb4.svg" class="w-auto h-[101px]">
+                <h3 class="font-semibold text-[14px] w-[196px]">
+                    Global Skills #2 - Project Planning
+                    <span class="text-[12px] font-normal text-[#515151]">DigitalInnovationOne</span>
+                    <br>
+                    <span class="text-[12px] font-normal text-[#515151]">971 visualizações</span>
+                    <br>
+                    <span class="text-[12px] font-normal text-[#515151]">Transmitido há 5 dias</span>
+                </h3>
+            </div>
+
+            <div class="flex w-full gap-x-2">
+                <img src="img/Thumb5.svg" class="w-auto h-[101px]">
+                <h3 class="font-semibold text-[14px] w-[196px]">
+                    Como aprender a programar Python do ZERO
+                    <span class="text-[12px] font-normal text-[#515151]">DigitalInnovationOne</span>
+                    <br>
+                    <span class="text-[12px] font-normal text-[#515151]">771 visualizações</span>
+                    <br>
+                    <span class="text-[12px] font-normal text-[#515151]">Transmitido há 6 dias</span>
+                </h3>
+            </div>
+
+            <div class="flex w-full gap-x-2">
+                <img src="img/Thumb.svg" class="w-auto h-[101px]">
+                <h3 class="font-semibold text-[14px] w-[196px]">
+                    Geração Tech Unimed - BH - Ciência de Dados
+                    <span class="text-[12px] font-normal text-[#515151]">DigitalInnovationOne</span>
+                    <br>
+                    <span class="text-[12px] font-normal text-[#515151]">2,1 mil visualizações</span>
+                    <br>
+                    <span class="text-[12px] font-normal text-[#515151]">Transmitido há 2 dias</span>
+                </h3>
+            </div>
+
+            <div class="flex w-full gap-x-2">
+                <img src="img/Thumb2.svg" class="w-auto h-[101px]">
+                <h3 class="font-semibold text-[14px] w-[196px]">
+                    Scrum Talks
+                    <span class="text-[12px] font-normal text-[#515151]">DigitalInnovationOne</span>
+                    <br>
+                    <span class="text-[12px] font-normal text-[#515151]">1,6 mil visualizações</span>
+                    <br>
+                    <span class="text-[12px] font-normal text-[#515151]">Transmitido há 3 dias</span>
+                </h3>
+            </div>
+
+            <div class="flex w-full gap-x-2">
+                <img src="img/Thumb3.svg" class="w-auto h-[101px]">
+                <h3 class="font-semibold text-[14px] w-[196px]">
+                    Machine Learning Avançado - Fast Track
+                    <span class="text-[12px] font-normal text-[#515151]">DigitalInnovationOne</span>
+                    <br>
+                    <span class="text-[12px] font-normal text-[#515151]">1,7 mil visualizações</span>
+                    <br>
+                    <span class="text-[12px] font-normal text-[#515151]">Transmitido há 4 dias</span>
+                </h3>
+            </div>
+
+            <div class="flex w-full gap-x-2">
+                <img src="img/Thumb4.svg" class="w-auto h-[101px]">
+                <h3 class="font-semibold text-[14px] w-[196px]">
+                    Global Skills #2 - Project Planning
+                    <span class="text-[12px] font-normal text-[#515151]">DigitalInnovationOne</span>
+                    <br>
+                    <span class="text-[12px] font-normal text-[#515151]">971 visualizações</span>
+                    <br>
+                    <span class="text-[12px] font-normal text-[#515151]">Transmitido há 5 dias</span>
+                </h3>
+            </div>
+        </section>
+    </main>
+
+    <!--Footer-->
+    <footer>
+        <p class="flex justify-self-center">Designed by Guilherme Cava</p>
+    </footer>
+</body>
+</html>
