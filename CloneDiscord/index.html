@@ -20,8 +20,13 @@
     header {
         background-image: url('img/HBackground.svg');
         background-size: cover;
-        background-position: center;
         background-repeat: no-repeat;
+    }
+
+    @media (max-width: 768px) {
+        header {
+            background-position: center;
+        }
     }
 </style>
 <body class="grid">
