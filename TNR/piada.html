@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>API</title>
+    <script defer src="JavaScript/face-api.min.js"></script>
+    <script defer src="JavaScript/main.js"></script>
+</head>
+<body>
+    <style>
+        canvas {
+            display: none;
+        }
+    </style>
+    <div>
+        <video id="video" width="720px" height="560px" muted></video>
+    </div>
+    
+    <h1 id="piada"></h1>
+    <h2 id="resposta"></h2>
+    <button id="mostrarResposta" onclick="mostrarResposta()">Mostrar Resposta</button>
+    <button id="proxima" onclick="proxima()">Próxima</button>
+    <script src="JavaScript/JSON.js"></script>
+</body>
+</html>
