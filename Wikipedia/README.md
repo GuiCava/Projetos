@@ -12,5 +12,5 @@
 
 - Considerações finais
   
-O Projeto foi feito com o propósito de eu justamente treinar o uso das tags semânticas, a fim de deixar cada projeto com mais acessibilidade.
+  O Projeto foi feito com o propósito de eu justamente treinar o uso das tags semânticas, a fim de deixar cada projeto com mais      acessibilidade.
   
