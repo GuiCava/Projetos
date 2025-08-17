@@ -12,5 +12,5 @@
 
 - Considerações finais
   
-O Projeto foi feito com o propósito de eu expandir meu portfolio e treinar o uso desse poderoso framework. Fiz uma pesquisa e vi que todo portfolio destacado tem uma Landing Page, como quero ter destaque no mercado, decidi fazer uma também.
-  
+  O Projeto foi feito com o propósito de eu expandir meu portfolio e treinar o uso desse poderoso framework. Fiz uma pesquisa e vi que todo portfolio destacado tem uma Landing Page, como quero ter destaque no mercado, decidi fazer uma também.
+    
