@@ -59,18 +59,6 @@ cam.addEventListener('play', () => {
                     window.open("fim.html", "_self");
                 }, 180000);
             }
-
-
-            
-
-
-            // Log das expressões armazenadas em variáveis separadas
-
-
-            // Agora você tem as expressões armazenadas em variáveis separadas que podem ser usadas em qualquer lugar.
-            // Exemplo: você pode usá-las para lógica condicional:
-
-
         }
 
         const resizedDetections = faceapi.resizeResults(detections, displaySize);

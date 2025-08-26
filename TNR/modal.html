@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jersey+15&family=Luckiest+Guy&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pixelify+Sans:wght@400..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+</head>
+<body class="bg-black grid content-center h-screen justify-items-center">
+    <dialog class="bg-white font-[Inter] font-semibold p-7 rounded-[10px] min-w-[300px] max-w-[600px] h-auto grid grid-rows-[auto_1fr] gap-y-6 absolute self-center justify-self-center">
+        <div class="flex w- justify-between">
+            <h3 class="text-[32px]">Regras:</h3>
+            <button class="self-start" onclick="closeModal()"><img src="img/close.svg"></button>
+        </div>
+        <ul class="grid gap-y-6 list-disc text-[25px] font-medium pl-5">
+            <li>Você tem 3 minutos para não rir</li>
+            <li class="">Se esbolçar qualquer expressão de felicidade ou risada, você perde.</li>
+            <li class="">Cada piada que você não rir, você ganha um ponto</li>
+        </ul>
+        <h4 class="pl-5 text-[20px]">Boa sorte!!</h4>
+    </dialog>
+</body>
+</html>
