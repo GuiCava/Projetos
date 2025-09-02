@@ -21,6 +21,8 @@
             <br>
             <h3 id="Pontos" class="text-center text-[36px] font-semibold font-[Inter] sm:text-[46px] xl:text-[56px]"></h3>
             <br>
+            <h4 id="Dica" class="text-center text-[34px] font-semibold font-[Inter] sm:text-[44px] xl:text-[54px]"></h4>
+            <br>
             <a href="index.html" class="bg-[#D7261E] text-white text-[30px] w-auto p-3 py-5 rounded-[5px] font-light px-4 sm:text-[40px] xl:text-[50px] lg:px-10 cursor-pointer hover:bg-[#b4332c] duration-300 ease-in-out">Voltar para o início</a>
         </section>
     </main>
@@ -29,6 +31,7 @@
         <p>® Copyright <a class="italic hover:font-semibold duration-50 ease-in-out" href="https://www.linkedin.com/in/guilhermecava/" target="_blank">Guilherme Cava</a> Todos os direitos reservador</p>
     </footer>
     <script>
+        let dica = document.getElementById("Dica");
         let win = new Audio ('./sound/Victory.mp3')
         let lose = new Audio ('./sound/GameOver.mp3')
         let Resultado = localStorage.getItem('resul');
@@ -47,6 +50,14 @@
             Resul.innerHTML = `Você <span class="text-green-600">${Resultado}</span> :)`;~
             body.classList.add("bg-[#dcf9db]")
             win.play()
+        }
+
+        if (Points <= 5) {
+            dica.innerText = "Obs: A leveza é essencial. Não tenha medo de sorrir um pouco mais.";
+        } else if (Points <= 10) {
+            dica.innerText = "Obs: Às vezes, o segredo está em saber quando sorrir e quando se manter focado. Você é equilibrado.";
+        } else {
+            dica.innerText = "Obs: O equilíbrio está em saber quando controlar e quando se entregar ao momento. Tente se divertir mais.";
         }
     </script>
 </body>
