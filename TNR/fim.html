@@ -52,11 +52,13 @@
             win.play()
         }
 
-        if (Points <= 5) {
-            dica.innerText = "Obs: A leveza é essencial. Não tenha medo de sorrir um pouco mais.";
-        } else if (Points <= 10) {
+        if (Points <= 0 && Resultado == "PERDEU") {
+            dica.innerText = "Obs: Rir é bom. Mas muito bom, faz mal.";
+        } else if (Points >= 8 && Resultado == "PERDEU") {
+            dica.innerText = "Obs: Com treino e dedicação, você vai conseguir alcançar o autocontrole.";
+        } else if (Points >= 13 && Resultado == "PERDEU") {
             dica.innerText = "Obs: Às vezes, o segredo está em saber quando sorrir e quando se manter focado. Você é equilibrado.";
-        } else {
+        } else if (Resultado == "GANHOU"){
             dica.innerText = "Obs: O equilíbrio está em saber quando controlar e quando se entregar ao momento. Tente se divertir mais.";
         }
     </script>
