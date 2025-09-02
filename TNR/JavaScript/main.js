@@ -57,10 +57,10 @@ cam.addEventListener('play', () => {
                 localStorage.setItem("resul", "GANHOU");
                 setTimeout (function () {
                     window.open("fim.html", "_self");
-                }, 7200000);
+                }, 180000);
             }
         }
-        //180000
+
         const resizedDetections = faceapi.resizeResults(detections, displaySize);
 
         canvas.getContext("2d").clearRect(0, 0, canvas.width, canvas.height);
