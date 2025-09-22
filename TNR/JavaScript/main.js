@@ -57,7 +57,7 @@ cam.addEventListener('play', () => {
                 localStorage.setItem("resul", "GANHOU");
                 setTimeout (function () {
                     window.open("fim.html", "_self");
-                }, 60000);
+                }, 120000);
             }
         }
 
@@ -71,4 +71,5 @@ cam.addEventListener('play', () => {
     }, 100);
     
 });
+
 
