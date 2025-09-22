@@ -1,0 +1,24 @@
+Projeto:
+
+O projeto é consiste em criar um site que apareça piadas na tela e detecte, através da câmera do cliente, se ele deu alguma risada. As piadas serão pegas a partir de uma API de piadas. O acesso á câmera e a detecção de risada será monitorado pelo OpenCV. Possivelmente irei usar frameworks como React ou Angular.
+
+Detalhes:
+	O usuário entrara no site e irá se deparar com uma simples tela de start com um botão para começar o jogo. 
+	Após o usuário der start, piadas aleatórias irão aparecer durante 2 minutos ou talvez, e o OpenCV entrará em ação 
+		A piada vai ficar na tela e o leitor de voz vai ler a piada e em seguida dar a resposta
+		Após ler a piada, um efeito de risada vai tocar
+		Caso o usuário não tenha dado risada, outra piada vai aparecer e continuará nesse ciclo por 2 minutos ou até o usuário dar risada.
+			O usuário vai ser redirecionado para a página de vitória
+		Caso o usuário tenha dado risada, o OpenCV detectara e, você será redirecionado para a página de derrota.
+			O usuário vai ser redirecionado para a página de derrota
+
+Frameworks:
+	_____________________
+	| Utilizar | Talvez |
+	---------------------
+	| Tailwind | React  |
+	| Bootstrap| Angular|
+	| 	   |        |
+	---------------------
+
+			

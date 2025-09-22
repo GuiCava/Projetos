@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fim | Tente Não Rir</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jersey+15&family=Luckiest+Guy&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pixelify+Sans:wght@400..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+</head>
+<body id="body" class="grid grid-rows-[auto_1fr_auto] font-[Inter] h-[100dvh] bg-[#F9EEDB]">
+      <!-- #F9EEDB  -->
+    <header class="h-15 bg-[#D7261E] text-white content-center pb-2 pl-4 text-[20px]">
+        <h1>Tente Não Rir!</h1>
+    </header>
+
+    <main class="justify-items-center content-center">
+        <section class="justify-items-center grid">
+            <h2 id="Resul" class="text-center text-[36px] font-semibold font-[Inter] sm:text-[46px] xl:text-[56px]"></h2>
+            <br>
+            <h3 id="Pontos" class="text-center text-[36px] font-semibold font-[Inter] sm:text-[46px] xl:text-[56px]"></h3>
+            <br>
+            <h4 id="Dica" class="text-center text-[34px] font-semibold font-[Inter] sm:text-[44px] xl:text-[54px]"></h4>
+            <br>
+            <a href="index.html" class="bg-[#D7261E] text-white text-[30px] w-auto p-3 py-5 rounded-[5px] font-light px-4 sm:text-[40px] xl:text-[50px] lg:px-10 cursor-pointer hover:bg-[#b4332c] duration-300 ease-in-out">Voltar para o início</a>
+        </section>
+    </main>
+
+    <footer class="h-[44px] bg-[#F4A000] text-left text-[13.5px] content-center pl-1">
+        <p>® Copyright <a class="italic hover:font-semibold duration-50 ease-in-out" href="https://www.linkedin.com/in/guilhermecava/" target="_blank">Guilherme Cava</a> Todos os direitos reservador</p>
+    </footer>
+    <script>
+        let dica = document.getElementById("Dica");
+        let win = new Audio ('./sound/Victory.mp3')
+        let lose = new Audio ('./sound/GameOver.mp3')
+        let Resultado = localStorage.getItem('resul');
+        let Resul = document.getElementById("Resul");
+        let Points = localStorage.getItem('points');
+        let Pontos = document.getElementById("Pontos");
+        Resul.innerText = `Você ${Resultado}!`;
+        Pontos.innerText = `Pontos: ${Points}`;
+        let body = document.getElementById("body");
+
+        if (Resultado == "PERDEU") {
+            Resul.innerHTML = `VOCÊ <span class="text-red-600">${Resultado}</span> :(`;
+            body.classList.add("bg-[#f9dbdb]")
+            lose.play()
+        } else {
+            Resul.innerHTML = `Você <span class="text-green-600">${Resultado}</span> :)`;~
+            body.classList.add("bg-[#dcf9db]")
+            win.play()
+        }
+
+        if (Points <= 0 && Resultado == "PERDEU") {
+            dica.innerText = "Obs: Rir é bom. Mas muito bom, faz mal.";
+        } else if (Points >= 8 && Resultado == "PERDEU") {
+            dica.innerText = "Obs: Com treino e dedicação, você vai conseguir alcançar o autocontrole.";
+        } else if (Points >= 13 && Resultado == "PERDEU") {
+            dica.innerText = "Obs: Às vezes, o segredo está em saber quando sorrir e quando se manter focado. Você é equilibrado.";
+        } else if (Resultado == "GANHOU"){
+            dica.innerText = "Obs: O equilíbrio está em saber quando controlar e quando se entregar ao momento. Tente se divertir mais.";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,492 @@
+[
+    {
+        "id": 1,
+        "pergunta": "Como se chama o prédio onde moram apenas cachorros?",
+        "resposta": "Cão-domínio"
+    },
+    {
+        "id": 2,
+        "pergunta": "Qual a parte do ser humano é um grande vazio?",
+        "resposta": "Só-vácuo."
+    },
+    {
+        "id": 3,
+        "pergunta": "Duas hemoglobinas assistem a televisão. Uma delas elogia a imagem da TV. O que a outra responde?",
+        "resposta": "É porque é plasma!"
+    },
+    {
+        "id": 4,
+        "pergunta": "Como dar nó em duas motos?",
+        "resposta": "Você pega Yamaha!"
+    },
+    {
+        "id": 5,
+        "pergunta": "Por que todo mundo quer ser Henrique?",
+        "resposta": "Porque todo mundo quer Henrique ser."
+    },
+    {
+        "id": 6,
+        "pergunta": "Qual torresmo nunca está de bem com a vida?",
+        "resposta": "O “tô-resmungando”."
+    },
+    {
+        "id": 7,
+        "pergunta": "Qual cachorro gosta de mergulhar?",
+        "resposta": "O Pittbum."
+    },
+    {
+        "id": 8,
+        "pergunta": "Qual é a cantora que dá ordens para todo mundo?",
+        "resposta": "A Mandonna."
+    },
+    {
+        "id": 9,
+        "pergunta": "O que a família falou quando chegou à Disney?",
+        "resposta": "Uau, Disney!."
+    },
+    {
+        "id": 10,
+        "pergunta": "Qual é a banda que pede para parar carinhosamente?",
+        "resposta": "Paramore."
+    },
+    {
+        "id": 11,
+        "pergunta": "O que o médico disse para o homem que entrou gemendo de dor no hospital?",
+        "resposta": "Seja paciente!"
+    },
+    {
+        "id": 12,
+        "pergunta": "Por que o cavalo estava no orelhão?",
+        "resposta": "Porque ele foi passar um trote."
+    },
+    {
+        "id": 13,
+        "pergunta": "Qual é o contrário de otorrinolaringologista?",
+        "resposta": "Otochoranolaringologista."
+    },
+    {
+        "id": 14,
+        "pergunta": "O que acontece com os leões quando acabam as férias?",
+        "resposta": "Volta às Jaulas."
+    },
+    {
+        "id": 15,
+        "pergunta": "Qual é o contrário de papelada?",
+        "resposta": "Pavestida."
+    },
+    {
+        "id": 16,
+        "pergunta": "Todo mundo é pato, até…?",
+        "resposta": "Sapato."
+    },
+    {
+        "id": 17,
+        "pergunta": "Qual é o personagem que solta pum de dois em dois?",
+        "resposta": "O Gás parzinho."
+    },
+    {
+        "id": 18,
+        "pergunta": "Tudo pira, até…?",
+        "resposta": "A caipira."
+    },
+    {
+        "id": 19,
+        "pergunta": "Tudo cola, até…?",
+        "resposta": "Sacola."
+    },
+    {
+        "id": 20,
+        "pergunta": "Qual é a tecla favorita do astronauta?",
+        "resposta": "O espaço."
+    },
+    {
+        "id": 21,
+        "pergunta": "O que a impressora disse para outra?",
+        "resposta": "“Você está quebrada ou é impressão minha?”"
+    },
+    {
+        "id": 22,
+        "pergunta": "Qual é o continente que tem problema de estômago?",
+        "resposta": "Ásia."
+    },
+    {
+        "id": 23,
+        "pergunta": "O que uma lâmpada disse para outra?",
+        "resposta": "Não se Watts."
+    },
+    {
+        "id": 24,
+        "pergunta": "Dieta do sopão: não pode comer nada, só…?",
+        "resposta": "Pão."
+    },
+    {
+        "id": 25,
+        "pergunta": "A faxineira não luta judô porque…?",
+        "resposta": "Ela luta capoeira."
+    },
+    {
+        "id": 26,
+        "pergunta": "O que um tatu disse para o outro?",
+        "resposta": "“Oi, tatu do bem?”"
+    },
+    {
+        "id": 27,
+        "pergunta": "Qual o nome da mãe de todos os legumes?",
+        "resposta": "Mãe-dioca."
+    },
+    {
+        "id": 28,
+        "pergunta": "Qual é a vó de todos os trigos?",
+        "resposta": "Aveia Quaker."
+    },
+    {
+        "id": 29,
+        "pergunta": "Por que Napoleão adorava ir a festas?",
+        "resposta": "Porque ele era Bom Na Party."
+    },
+    {
+        "id": 30,
+        "pergunta": "O que aconteceu quando os lápis souberam que o dono da Faber Castell morreu?",
+        "resposta": "Eles ficaram desapontados."
+    },
+    {
+        "id": 31,
+        "pergunta": "Como acaba uma partida de futebol entre patos?",
+        "resposta": "Empatado."
+    },
+    {
+        "id": 32,
+        "pergunta": "Já pensou se chovesse achocolatado?",
+        "resposta": "A gente ia se molhar toddynho."
+    },
+    {
+        "id": 33,
+        "pergunta": "A fome é inimiga da…?",
+        "resposta": "Refeição."
+    },
+    {
+        "id": 34,
+        "pergunta": "Qual é o nome do rapaz que trabalha com aviões?",
+        "resposta": "Natan."
+    },
+    {
+        "id": 35,
+        "pergunta": "A água foi presa porque…?",
+        "resposta": "Matou a sede."
+    },
+    {
+        "id": 36,
+        "pergunta": "Qual é o órgão mais mal-educado do nosso corpo?",
+        "resposta": "O intestino grosso."
+    },
+    {
+        "id": 37,
+        "pergunta": "Qual é o animal que tá sempre dormindo?",
+        "resposta": "O Tirano sono rex."
+    },
+    {
+        "id": 38,
+        "pergunta": "O que o motorista disse quando parou o ônibus?",
+        "resposta": "A que ponto chegamos."
+    },
+    {
+        "id": 39,
+        "pergunta": "Qual é o sapato de quem anda mancando?",
+        "resposta": "Tamanco."
+    },
+    {
+        "id": 40,
+        "pergunta": "Qual é a peça de roupa que os personagens de Dragon Ball Z usam?",
+        "resposta": "Super saia jeans."
+    },
+    {
+        "id": 41,
+        "pergunta": "Qual é o contrário de volátil?",
+        "resposta": "Vem cá sobrinho."
+    },
+    {
+        "id": 42,
+        "pergunta": "Por que a moça adotou uma garrafa?",
+        "resposta": "Porque ela era uma garrafa pet."
+    },
+    {
+        "id": 43,
+        "pergunta": "Por que o rapaz colocou um Guinness Book no liquidificador?",
+        "resposta": "Para bater todos os recordes."
+    },
+    {
+        "id": 44,
+        "pergunta": "Por que o pinheiro nunca se perde na floresta?",
+        "resposta": "Porque ele tem uma pinha."
+    },
+    {
+        "id": 45,
+        "pergunta": "Qual é a fruta que sempre fica em segundo lugar?",
+        "resposta": "Banana prata."
+    },
+    {
+        "id": 46,
+        "pergunta": "O que o martelo foi fazer na igreja?",
+        "resposta": "Ele foi pregar."
+    },
+    {
+        "id": 47,
+        "pergunta": "Por que o torresmo tá sempre bravo?",
+        "resposta": "Porque ele nunca tá de bacon a vida."
+    },
+    {
+        "id": 48,
+        "pergunta": "Qual é o país que ama uma reunião?",
+        "resposta": "Os Estados Unidos."
+    },
+    {
+        "id": 49,
+        "pergunta": "Você sabia que metade da salsicha é só sal? Por quê?",
+        "resposta": "Porque o restante é “sicha”."
+    },
+    {
+        "id": 50,
+        "pergunta": "Qual carro faz a previsão do tempo?",
+        "resposta": "Celta preto!"
+    },
+    {
+        "id": 51,
+        "pergunta": "Você sabia que em dia de eleição todo mundo perde o avô? Por quê?",
+        "resposta": "Porque todo mundo fica dizendo “Onde vovô tá?”"
+    },
+    {
+        "id": 52,
+        "pergunta": "Qual a cidade dos editores de vídeo?",
+        "resposta": "Montevideo."
+    },
+    {
+        "id": 53,
+        "pergunta": "Sabe quem é o rei dos queijos?",
+        "resposta": "Reiqueijão."
+    },
+    {
+        "id": 54,
+        "pergunta": "Qual é o nome do deus nórdico humorista?",
+        "resposta": "Carlos Alber-thor."
+    },
+    {
+        "id": 55,
+        "pergunta": "Por que a idosa não usa relógio?",
+        "resposta": "Porque ela é senhora."
+    },
+    {
+        "id": 56,
+        "pergunta": "Por que tinha uma cama elástica no Polo Norte?",
+        "resposta": "Para o urso polar."
+    },
+    {
+        "id": 57,
+        "pergunta": "Oi, estava comendo melancia e lembrei de você. Por quê?",
+        "resposta": "Semente demais."
+    },
+    {
+        "id": 58,
+        "pergunta": "Qual o doce favorito do átomo?",
+        "resposta": "Pé de Moléculas."
+    },
+    {
+        "id": 59,
+        "pergunta": "O que a mamãe açaí disse para os filhos?",
+        "resposta": "O último açaí fecha a porta."
+    },
+    {
+        "id": 60,
+        "pergunta": "Por que é bom beber suco devagar?",
+        "resposta": "Porque ele é suco lento."
+    },
+    {
+        "id": 61,
+        "pergunta": "O que o pagodeiro foi fazer na igreja?",
+        "resposta": "Foi cantar pá god."
+    },
+    {
+        "id": 62,
+        "pergunta": "Qual é o nome do game que os viciados em café adoram?",
+        "resposta": "Coffee Duty."
+    },
+    {
+        "id": 63,
+        "pergunta": "Qual o animal que não tem peso?",
+        "resposta": "Ex-quilo."
+    },
+    {
+        "id": 64,
+        "pergunta": "Qual é o oceano que odeia brigas?",
+        "resposta": "Oceano Pacífico."
+    },
+    {
+        "id": 65,
+        "pergunta": "Qual é o oceano que indica as coisas?",
+        "resposta": "Oceano Índico."
+    },
+    {
+        "id": 66,
+        "pergunta": "O que um continente disse para o outro que estava indo embora?",
+        "resposta": "Ah frica, vai…"
+    },
+    {
+        "id": 67,
+        "pergunta": "Por que óculos vermelhos é bom para as vistas?",
+        "resposta": "Porque é para vermelhor."
+    },
+    {
+        "id": 68,
+        "pergunta": "Por que óculos verdes aumentam as letras?",
+        "resposta": "Porque é para verde perto."
+    },
+    {
+        "id": 69,
+        "pergunta": "Batman, por que você trancou o Bat-móvel?",
+        "resposta": "Porque eu estou com medo que Robin!"
+    },
+    {
+        "id": 70,
+        "pergunta": "Que documento o Thor usa para provar que é ele mesmo?",
+        "resposta": "Título de Ele-é-Thor."
+    },
+    {
+        "id": 71,
+        "pergunta": "Eu não uso boné, mas…?",
+        "resposta": "Cazuza."
+    },
+    {
+        "id": 72,
+        "pergunta": "O meu celular foi roubado e o da…?",
+        "resposta": "Nelly, Furtado."
+    },
+    {
+        "id": 73,
+        "pergunta": "Ele é traiçoeiro. Já a…?",
+        "resposta": "Leandra, Leal."
+    },
+    {
+        "id": 74,
+        "pergunta": "A Maria viu golfinho. A…?",
+        "resposta": "Cláudia, Raia."
+    },
+    {
+        "id": 75,
+        "pergunta": "Depois da corrida, eu fiquei com dor nas pernas. E o…?",
+        "resposta": "Evaristo, Costa."
+    },
+    {
+        "id": 76,
+        "pergunta": "Eu prefiro vinho doce. A Débora…?",
+        "resposta": "Secco."
+    },
+    {
+        "id": 77,
+        "pergunta": "Eu gosto de rio. Neymar.",
+        "resposta": "Neymar."
+    },
+    {
+        "id": 78,
+        "pergunta": "Eu gosto de lago. O…?",
+        "resposta": "Bruno Mars."
+    },
+    {
+        "id": 79,
+        "pergunta": "Eu falo bonita. O…?",
+        "resposta": "Miguel Falabella."
+    },
+    {
+        "id": 80,
+        "pergunta": "Encontrei meu instrutor de autoescola no forró. Ele disse que estava ensinando…?",
+        "resposta": "Frank Aguiar."
+    },
+    {
+        "id": 81,
+        "pergunta": "Eu gosto de calor. Já o…?",
+        "resposta": "Milton Neves."
+    },
+    {
+        "id": 82,
+        "pergunta": "Eu era um péssimo jovem. Já o…?",
+        "resposta": "Jon Bon Jovi."
+    },
+    {
+        "id": 83,
+        "pergunta": "Eu gosto de cidade. A…?",
+        "resposta": "Vanessa da Mata."
+    },
+    {
+        "id": 84,
+        "pergunta": "Eu como maçã. A…?",
+        "resposta": "Marília Pera."
+    },
+    {
+        "id": 85,
+        "pergunta": "Ela não queria ir, mas…?",
+        "resposta": "Cássia Kiss."
+    },
+    {
+        "id": 86,
+        "pergunta": "Eu acordo bem tarde. Já…?",
+        "resposta": "Edir Macedo."
+    },
+    {
+        "id": 87,
+        "pergunta": "Eu como no prato. A…?",
+        "resposta": "Cléo Pires."
+    },
+    {
+        "id": 88,
+        "pergunta": "Quando eu era criança, eu comia formiga. A minha prima…?",
+        "resposta": "ração de cachorro e o José Terra."
+    },
+    {
+        "id": 89,
+        "pergunta": "Eu prefiro escalar montanhas. Já o…?",
+        "resposta": "Rafael Rocha."
+    },
+    {
+        "id": 90,
+        "pergunta": "Eu não esperei. Mas o…?",
+        "resposta": "Jack Sparrow."
+    },
+    {
+        "id": 91,
+        "pergunta": "A Maria gosta de andar na terra. Já a…?",
+        "resposta": "Marcela Pontes."
+    },
+    {
+        "id": 92,
+        "pergunta": "Meu pai prefere cortar com a serra. Já o…?",
+        "resposta": "João Machado."
+    },
+    {
+        "id": 93,
+        "pergunta": "Eu gosto de show em lugares pequenos. Já a…?",
+        "resposta": "Ana Arena."
+    },
+    {
+        "id": 94,
+        "pergunta": "A Maria prefere cachorros. Já a…?",
+        "resposta": "Patrícia Coelho."
+    },
+    {
+        "id": 95,
+        "pergunta": "Eu encho o balde. Mas o…?",
+        "resposta": "Valderrama."
+    },
+    {
+        "id": 96,
+        "pergunta": "Eu gosto de usar gasolina. Já o…?",
+        "resposta": "Vin Diesel."
+    },
+    {
+        "id": 97,
+        "pergunta": "Eu estava escrevendo. O…?",
+        "resposta": "John Lennon."
+    },
+    {
+        "id": 98,
+        "pergunta": "Qual é o contrário de paixão?",
+        "resposta": "Mãe Teto."
+    }
+]

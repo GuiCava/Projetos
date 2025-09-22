@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jogo | Tente Não Rir</title>
+    <script defer src="JavaScript/face-api.min.js"></script>
+    <script defer src="JavaScript/main.js"></script>
+    <script defer src="JavaScript/JSON.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jersey+15&family=Luckiest+Guy&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pixelify+Sans:wght@400..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <style>
+        canvas {
+            display: none;
+        }
+
+        @media (min-width: 640px) {
+            body {
+                background-image: url("img/bg-desktop.svg");
+            }
+        }
+    </style>
+</head>
+<body class="grid grid-rows-[auto_1fr_auto] font-[Inter] h-[100dvh] sm:bg-[url(/img/bg-desktop.svg)]  bg-[#F9EEDB]">
+
+    <header class="h-15 bg-[#D7261E] text-white content-center pb-2 pl-4 text-[20px]">
+        <h1>Tente Não Rir!</h1>
+    </header>
+
+    <main class="grid grid-rows-[auto_auto] h-full justify-items-center pt-3">
+        <video id="video" class="rounded-[10px] self-center max-h-[40dvh] w-auto" muted></video>
+
+        <section class="grid self-center justify-items-center gap-y-3">
+            <h1 id="piada" class="text-[20px] text-center text-[#D7261E] font-semibold w-full px-1 sm:text-[25px] lg:text-[30px] xl:text-[35px] bg-[#F9EEDB]"></h1>
+
+            <button id="mostrarResposta" onclick="mostrarResposta()" class="bg-[#E7399B] text-white text-[16px] w-auto p-3 rounded-[5px] font-light px-4 sm:text-[21px] xl:text-[26px] lg:px-10 cursor-pointer hover:bg-[#C3277F] duration-300 ease-in-out">Exibir Resposta</button>
+
+            <h2 id="resposta" class="text-[20px] text-[#E7399B] text-center font-semibold sm:text-[30px] bg-[#F9EEDB]"></h2>
+            <button id="proxima" onclick="proxima()" class="bg-[#007A5E] text-white text-[16px] w-auto p-3 rounded-[5px] font-light px-4 lg:text-[20px] cursor-pointer hover:bg-[#1b6453] duration-300 ease-in-out">Próxima</button>
+        </section>
+    </main>
+
+    <footer class="h-[44px] bg-[#F4A000] text-left text-[13.5px] content-center pl-1">
+        <p>® Copyright <a class="italic hover:font-semibold duration-50 ease-in-out" href="https://www.linkedin.com/in/guilhermecava/" target="_blank">Guilherme Cava</a> Todos os direitos reservador</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tente Não Rir</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jersey+15&family=Luckiest+Guy&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pixelify+Sans:wght@400..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+</head>
+<style>
+    @media (max-height: 667px) {
+        section {
+            gap: 20px;
+        }
+
+        main h2 {
+            font-size: 50px;
+        }
+
+        .p {
+            font-size: 32px;
+        }
+
+        .t {
+            font-size: 32px;
+        }
+    }
+
+    @media (min-width: 640px) {
+        body {
+            background-image: url("img/bg-desktop.svg");
+        }
+    }
+</style>
+<body class="grid grid-rows-[auto_1fr_auto] font-[Inter] h-[100dvh] sm:bg-[url(/img/bg-desktop.svg)]  bg-[#F9EEDB]">
+
+    <header class="h-15 bg-[#D7261E] text-white content-center pb-2 pl-4 text-[20px] mb-10">
+        <h1>Tente Não Rir!</h1>
+    </header>
+
+    <main class="grid grid-rows-[auto_1fr] justify-items-center">
+        <h2 class="w-[340px] font-semibold text-[50px] text-center md:w-auto lg:text-[80px] xl:text-[100px]">TENTE NÃO RIR</h2>
+
+        <section class="grid grid-rows-[auto_auto_auto] content-center text-center gap-y-8 self-center text-white font-semibold">
+            <a href="piada.html" class="bg-[#E7399B] rounded-[10px] text-[42px] p-6 p hover:bg-[#C3277F] duration-300 ease-in-out">Começar</a>
+
+            <button onclick="openModal()" class="bg-[#E7399B] rounded-[10px] text-[42px] p-6 cursor-pointer p hover:bg-[#C3277F] duration-300 ease-in-out">Intruções</button>
+
+            <a href="https://github.com/GuiCava/Projetos" target="_blank" class="bg-[#E7399B] rounded-[10px] text-[32px] text-center t hover:bg-[#C3277F] duration-300 ease-in-out">Mais<br>Projetos</a>
+        </section>
+
+        <dialog class="bg-white font-[Inter] font-semibold p-7 rounded-[10px] min-w-[300px] max-w-[600px] h-auto none grid-rows-[auto_1fr] gap-y-6 absolute self-center justify-self-center" id="Modal">
+            <div class="flex w- justify-between">
+                <h3 class="text-[32px]">Regras:</h3>
+                <button class="self-start cursor-pointer" onclick="closeModal()"><img src="img/close.svg"></button>
+            </div>
+            <ul class="grid gap-y-6 list-disc text-[25px] font-medium pl-5">
+                <li>Você tem 1 minuto para não rir</li>
+                <li class="">Se esbolçar qualquer expressão de felicidade ou risada, você perde.</li>
+                <li class="">Cada piada que você não rir, você ganha um ponto</li>
+            </ul>
+            <h4 class="pl-5 text-[20px]">Boa sorte!!</h4>
+        </dialog>
+    </main>
+
+    <footer class="h-[44px] bg-[#F4A000] text-left text-[13.5px] content-center pl-1">
+        <p>® Copyright <a class="italic hover:font-semibold duration-50 ease-in-out" href="https://www.linkedin.com/in/guilhermecava/" target="_blank">Guilherme Cava</a> Todos os direitos reservador</p>
+    </footer>
+    <script src="JavaScript/script.js"></script>
+</body>
+</html>
