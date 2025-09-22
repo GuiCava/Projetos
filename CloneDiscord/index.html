@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discord</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<style>
+    @font-face {
+        font-family: 'Guy';
+        src: url('font/LuckiestGuy-Regular.ttf');
+    }   
+
+    @font-face {
+        font-family: 'Sans';
+        src: url('font/OpenSans-VariableFont_wdth\,wght.ttf');
+    }   
+
+    header {
+        background-image: url('img/HBackground.svg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    @media (max-width: 768px) {
+        header {
+            background-position: center;
+        }
+    }
+</style>
+<body class="grid">
+    <header class="grid bg-[url(/img/HBackground.svg)] bg-cover max-md:bg-center bg-no-repeat px-6 py-15 h-[505px] justify-items-center items-center gap-y-5 md:h-[459px] md:py-19">
+        <section class="grid">
+            <section class="flex flex-col mb-6 md:mb-18">
+                <h1 class="font-[Guy] font-normal md:text-[56px] text-[32px] text-white content-center h-[35px] md:h-[56px] md:text-center">IMAGINE UM</h1>
+                <h1 class="font-[Guy] font-normal md:text-[56px] text-[32px] md:text-center text-white content-center h-[35px]">LUGAR...</h1>
+            </section>
+
+            <p class="text-[16px] w-[360px] text-white font-[Sans] md:w-[750px] md:text-center">…onde você possa pertencer a um clube escolar, um grupo de gamers, ou uma comunidade artística mundial. Onde você e amduns amigos possam passar um tempo juntos. Um lugar que torna fácil conversar todos os dias e socializar com mais frequência.</p>
+        </section>
+
+        <section class="grid gap-y-4 md:flex md:gap-x-6">
+            <button class="w-[381px] h-[54px] rounded-[28px] bg-white font-[Sans] font-[16px] cursor-pointer text-[#23272A] md:h-[44px] md:w-[205px]">Baixar para Windows</button>
+             <button class="w-[381px] h-[52px] md:h-[44px] md:w-[281px] text-white rounded-[28px] bg-[#23272A] font-[Sans] font-[16px] cursor-pointer">Abra o Discord no seu navegador</button>
+        </section>
+    </header>
+
+    <main>
+        <!--Section1-->
+        <section class="grid py-10 px-6 gap-y-6 w-full md:grid-cols-[auto_auto] md:justify-items-center md:px-[10%] md:grid-rows-[auto_auto]">
+            <img src="img/Section1.svg" class="grid row-span-2 md:w-[607px] md:h-[394]">
+            <h2 class="font-[Sans] font-extrabold text-[24px] text-[#23272A] w-[350px] md:text-[40px] md:w-[340px]">Crie um espaço controlado por convite onde você se sinta em casa</h2>
+            <p class="w-[350px] font-[Sans] text-[16px] text-[#23272A]">Os servidores Discord são organizados em canais com assuntos para vocês colaborarem, compartilharem ou simplesmente falarem do dia sem entupir um chat geral.</p>
+        </section>
+
+        <!--Section2-->
+        <section class="grid py-10 px-6 gap-y-6 md:gap-y-0 bg-[#F6F6F6] w-full md:grid-cols-[auto_auto] md:justify-items-center md:px-[10%] md:grid-rows-[auto_auto]">
+            <img src="img/Section2.svg" class="grid md:col-start-2 row-span-2 md:w-[607px] md:h-[394]">
+            <h2 class="grid font-[Sans] font-extrabold text-[24px] text-[#23272A] w-[350px] md:text-[40px] md:w-[340px] md:row-start-1 md:self-end md:mb-5">Aqui é fácil se encontrar</h2>
+            <p class="grid w-[350px] font-[Sans] text-[16px] text-[#23272A]">Entre no canal de voz quando estiver à toa. Amigos no mesmo servidor podem te ver e entrar imediatamente, sem nem ter que fazer a chamada.
+            </p>
+        </section>
+
+        <!--Section3-->
+        <section class="grid py-10 px-6 gap-y-6 md:gap-y-0 w-full md:grid-cols-[auto_auto] md:justify-items-center md:px-[10%] md:grid-rows-[auto_auto]">
+            <img src="img/Section3.svg" class="grid row-span-2 md:w-[607px] md:h-[394]">
+            <h2 class="font-[Sans] font-extrabold text-[24px] text-[#23272A] w-[350px] md:text-[40px] md:w-[340px] md:self-end md:mb-5">Para poucos e para muitos</h2>
+            <p class="w-[350px] font-[Sans] text-[16px] text-[#23272A]">Organize qualquer comunidade com ferramentas de moderação e acesso personalizado a membros. Dê poderes especiais aos membros, monte canais privados e muito mais.</p>
+        </section>
+
+        <!--Section4-->
+        <section class="grid py-10 px-6 gap-y-8 bg-[#F6F6F6] w-full justify-items-center">
+            <h2 class="font-[Guy] font-extrabold text-[32px] text-[#23272A] w-[360px] md:text-[40px] md:text-center md:w-[500px]">TECNOLOGIA DE CONEXÃO CONFIÁVEL</h2>
+            <p class="w-[350px] font-[Sans] text-[16px] text-[#23272A] md:w-[800px] md:text-center">Voz e vídeo de baixa latência, para você conversar como se estivesse na mesma sala. Dê um joinha por vídeo, veja amigos transmitirem a jogatina do dia ou junte uma galera pra desenhar na tela compartilhada.</p>
+            <img src="img/Section4.svg">
+        </section>
+    </main>
+
+    <footer class="grid bg-[#23272A] h-[140px] justify-items-center items-center md:h-[134px]">
+        <img src="img/Footer.svg">
+    </footer>
+</body>
+</html>
