@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <script src="JS/docente.js"></script>
     <style>
         @font-face {
             font-family: 'BlackOps';
@@ -29,7 +30,7 @@
     <div class="grid grid-rows-[auto_1fr_auto] border-solid border-[17px] border-[#F92222] justify-items-center gap-y-3">
         <header class="flex bg-[#6E6E6E] w-[95%] text-center text-[18px] h-[76px] md:h-[148px] content-center font-[BlackOps] text-white m-5 sm:text-[25px] md:text-[40px] justify-items-center px-4 md:pr-[60%]">
             <div class="grid w-[90%] content-center">
-                <h2 class="font-[BlackOps] text-[1.1em]">LISTA DE ESPERA</h2>
+                <h2 class="font-[BlackOps] text-[1.1em] md:text-[30px] lg:text-[1.1em]">LISTA DE ESPERA</h2>
                 <div class="w-full h-[6px] bg-[#F3F823] rounded-full"></div>
             </div>
             <h2 class="content-center text-[2em]">📋</h2>
@@ -45,22 +46,89 @@
                     <h2 class="content-center text-[24px] sm:text-[30px] md:text-[34px]">🤚</h2>
                 </section>
 
-                <section class="grid p-2 md:p-4 w-[90%] bg-white border-solid border-[#EF3434] border-b-10 h-full content-start gap-y-4">
+                <section class="grid p-2 md:p-4 w-[90%] bg-white border-solid border-[#EF3434] border-b-10 content-start gap-y-4 overflow-y-auto min-h-0 rounded-[8px] max-h-[150px] h-full sm:max-h-[240px] md:max-h-[460px] lg:max-h-[560px]">
+                    <!-- Lista de Solicitações -->
                     <div class="grid grid-cols-[1fr_auto_auto] gap-x-2 text-center">
                         <div class="bg-[#D9D9D9] content-center justify-items-center font-[Inter] font-bold truncate text-left pl-2 text-[1.3em]">
                             Sofia Andrade Félix
                         </div>
-                        <button class="bg-[#D9D9D9] p-2 font-[Inter] font-bold cursor-pointer rounded-[4px] hover:bg-green-500 ease-in-out duration-300 hover:text-white hover:border-solid hover:border-[2px] hover:border-black">Aceitar</button>
-                        <button class="bg-[#D9D9D9] p-2 font-[Inter] font-bold cursor-pointer rounded-[4px] hover:bg-red-600 ease-in-out duration-300 hover:text-white hover:border-solid hover:border-[2px] hover:border-black">Recusar</button>
+                        <button class="bg-[#D9D9D9] p-2 font-[Inter] font-bold cursor-pointer rounded-[4px] hover:bg-green-500 ease-in-out duration-200 hover:text-white hover:border-solid hover:border-[1px] hover:border-black" onclick="aceitar()">Aceitar</button>
+                        <button class="bg-[#D9D9D9] p-2 font-[Inter] font-bold cursor-pointer rounded-[4px] hover:bg-red-600 ease-in-out duration-200 hover:text-white hover:border-solid hover:border-[1px] hover:border-black" onclick="recusar()">Recusar</button>
                     </div>
 
                     <div class="grid grid-cols-[1fr_auto_auto] gap-x-2 text-center">
                         <div class="bg-[#D9D9D9] content-center justify-items-center font-[Inter] font-bold truncate text-left pl-2 text-[1.3em]">
                             Sofia Andrade Félix
                         </div>
-                        <button class="bg-[#D9D9D9] p-2 font-[Inter] font-bold cursor-pointer rounded-[4px] hover:bg-green-500 ease-in-out duration-300 hover:text-white hover:border-solid hover:border-[2px] hover:border-black">Aceitar</button>
-                        <button class="bg-[#D9D9D9] p-2 font-[Inter] font-bold cursor-pointer rounded-[4px] hover:bg-red-600 ease-in-out duration-300 hover:text-white hover:border-solid hover:border-[2px] hover:border-black">Recusar</button>
+                        <button class="bg-[#D9D9D9] p-2 font-[Inter] font-bold cursor-pointer rounded-[4px] hover:bg-green-500 ease-in-out duration-200 hover:text-white hover:border-solid hover:border-[1px] hover:border-black" onclick="aceitar()">Aceitar</button>
+                        <button class="bg-[#D9D9D9] p-2 font-[Inter] font-bold cursor-pointer rounded-[4px] hover:bg-red-600 ease-in-out duration-200 hover:text-white hover:border-solid hover:border-[1px] hover:border-black" onclick="recusar()">Recusar</button>
                     </div>
+
+                    <div class="grid grid-cols-[1fr_auto_auto] gap-x-2 text-center">
+                        <div class="bg-[#D9D9D9] content-center justify-items-center font-[Inter] font-bold truncate text-left pl-2 text-[1.3em]">
+                            Sofia Andrade Félix
+                        </div>
+                        <button class="bg-[#D9D9D9] p-2 font-[Inter] font-bold cursor-pointer rounded-[4px] hover:bg-green-500 ease-in-out duration-200 hover:text-white hover:border-solid hover:border-[1px] hover:border-black" onclick="aceitar()">Aceitar</button>
+                        <button class="bg-[#D9D9D9] p-2 font-[Inter] font-bold cursor-pointer rounded-[4px] hover:bg-red-600 ease-in-out duration-200 hover:text-white hover:border-solid hover:border-[1px] hover:border-black" onclick="recusar()">Recusar</button>
+                    </div>
+
+                    <div class="grid grid-cols-[1fr_auto_auto] gap-x-2 text-center">
+                        <div class="bg-[#D9D9D9] content-center justify-items-center font-[Inter] font-bold truncate text-left pl-2 text-[1.3em]">
+                            Sofia Andrade Félix
+                        </div>
+                        <button class="bg-[#D9D9D9] p-2 font-[Inter] font-bold cursor-pointer rounded-[4px] hover:bg-green-500 ease-in-out duration-200 hover:text-white hover:border-solid hover:border-[1px] hover:border-black" onclick="aceitar()">Aceitar</button>
+                        <button class="bg-[#D9D9D9] p-2 font-[Inter] font-bold cursor-pointer rounded-[4px] hover:bg-red-600 ease-in-out duration-200 hover:text-white hover:border-solid hover:border-[1px] hover:border-black" onclick="recusar()">Recusar</button>
+                    </div>
+
+                    <div class="grid grid-cols-[1fr_auto_auto] gap-x-2 text-center">
+                        <div class="bg-[#D9D9D9] content-center justify-items-center font-[Inter] font-bold truncate text-left pl-2 text-[1.3em]">
+                            Sofia Andrade Félix
+                        </div>
+                        <button class="bg-[#D9D9D9] p-2 font-[Inter] font-bold cursor-pointer rounded-[4px] hover:bg-green-500 ease-in-out duration-200 hover:text-white hover:border-solid hover:border-[1px] hover:border-black" onclick="aceitar()">Aceitar</button>
+                        <button class="bg-[#D9D9D9] p-2 font-[Inter] font-bold cursor-pointer rounded-[4px] hover:bg-red-600 ease-in-out duration-200 hover:text-white hover:border-solid hover:border-[1px] hover:border-black" onclick="recusar()">Recusar</button>
+                    </div>
+
+                    <div class="grid grid-cols-[1fr_auto_auto] gap-x-2 text-center">
+                        <div class="bg-[#D9D9D9] content-center justify-items-center font-[Inter] font-bold truncate text-left pl-2 text-[1.3em]">
+                            Sofia Andrade Félix
+                        </div>
+                        <button class="bg-[#D9D9D9] p-2 font-[Inter] font-bold cursor-pointer rounded-[4px] hover:bg-green-500 ease-in-out duration-200 hover:text-white hover:border-solid hover:border-[1px] hover:border-black" onclick="aceitar()">Aceitar</button>
+                        <button class="bg-[#D9D9D9] p-2 font-[Inter] font-bold cursor-pointer rounded-[4px] hover:bg-red-600 ease-in-out duration-200 hover:text-white hover:border-solid hover:border-[1px] hover:border-black" onclick="recusar()">Recusar</button>
+                    </div>
+
+                    <div class="grid grid-cols-[1fr_auto_auto] gap-x-2 text-center">
+                        <div class="bg-[#D9D9D9] content-center justify-items-center font-[Inter] font-bold truncate text-left pl-2 text-[1.3em]">
+                            Sofia Andrade Félix
+                        </div>
+                        <button class="bg-[#D9D9D9] p-2 font-[Inter] font-bold cursor-pointer rounded-[4px] hover:bg-green-500 ease-in-out duration-200 hover:text-white hover:border-solid hover:border-[1px] hover:border-black" onclick="aceitar()">Aceitar</button>
+                        <button class="bg-[#D9D9D9] p-2 font-[Inter] font-bold cursor-pointer rounded-[4px] hover:bg-red-600 ease-in-out duration-200 hover:text-white hover:border-solid hover:border-[1px] hover:border-black" onclick="recusar()">Recusar</button>
+                    </div>
+
+                    <div class="grid grid-cols-[1fr_auto_auto] gap-x-2 text-center">
+                        <div class="bg-[#D9D9D9] content-center justify-items-center font-[Inter] font-bold truncate text-left pl-2 text-[1.3em]">
+                            Sofia Andrade Félix
+                        </div>
+                        <button class="bg-[#D9D9D9] p-2 font-[Inter] font-bold cursor-pointer rounded-[4px] hover:bg-green-500 ease-in-out duration-200 hover:text-white hover:border-solid hover:border-[1px] hover:border-black" onclick="aceitar()">Aceitar</button>
+                        <button class="bg-[#D9D9D9] p-2 font-[Inter] font-bold cursor-pointer rounded-[4px] hover:bg-red-600 ease-in-out duration-200 hover:text-white hover:border-solid hover:border-[1px] hover:border-black" onclick="recusar()">Recusar</button>
+                    </div>
+
+                    <div class="grid grid-cols-[1fr_auto_auto] gap-x-2 text-center">
+                        <div class="bg-[#D9D9D9] content-center justify-items-center font-[Inter] font-bold truncate text-left pl-2 text-[1.3em]">
+                            Sofia Andrade Félix
+                        </div>
+                        <button class="bg-[#D9D9D9] p-2 font-[Inter] font-bold cursor-pointer rounded-[4px] hover:bg-green-500 ease-in-out duration-200 hover:text-white hover:border-solid hover:border-[1px] hover:border-black" onclick="aceitar()">Aceitar</button>
+                        <button class="bg-[#D9D9D9] p-2 font-[Inter] font-bold cursor-pointer rounded-[4px] hover:bg-red-600 ease-in-out duration-200 hover:text-white hover:border-solid hover:border-[1px] hover:border-black" onclick="recusar()">Recusar</button>
+                    </div>
+
+                    <div class="grid grid-cols-[1fr_auto_auto] gap-x-2 text-center">
+                        <div class="bg-[#D9D9D9] content-center justify-items-center font-[Inter] font-bold truncate text-left pl-2 text-[1.3em]">
+                            Sofia Andrade Félix
+                        </div>
+                        <button class="bg-[#D9D9D9] p-2 font-[Inter] font-bold cursor-pointer rounded-[4px] hover:bg-green-500 ease-in-out duration-200 hover:text-white hover:border-solid hover:border-[1px] hover:border-black" onclick="aceitar()">Aceitar</button>
+                        <button class="bg-[#D9D9D9] p-2 font-[Inter] font-bold cursor-pointer rounded-[4px] hover:bg-red-600 ease-in-out duration-200 hover:text-white hover:border-solid hover:border-[1px] hover:border-black" onclick="recusar()">Recusar</button>
+                    </div>
+
+
                 </section>
             </section>
 
@@ -73,12 +141,12 @@
                     <img class="w-[3.2em]" src="img/school-icon.svg"> 
                 </section>
 
-                <section class="grid p-2 md:p-4 w-[90%] bg-white border-solid border-[#EF3434] border-b-10 h-full content-start">
+                <section class="grid p-2 md:p-4 w-[90%] bg-white border-solid border-[#EF3434] border-b-10 h-full content-start overflow-y-auto min-h-0 rounded-[8px] max-h-[150px] md:max-h-[460px] lg:max-h-[560px] sm:max-h-[240px]">
                     <div class="grid grid-cols-[1fr_auto_auto] gap-x-[4%] text-center">
                         <div class="bg-[#D9D9D9] content-center justify-items-center font-[Inter] font-bold truncate text-left pl-2 text-[1.3em]">
                             Sofia Andrade Félix
                         </div>
-                        <button class="bg-[#D9D9D9] p-2 font-[Inter] font-bold cursor-pointer rounded-[4px] hover:bg-green-500 ease-in-out duration-300 hover:text-white hover:border-solid hover:border-[2px] hover:border-black px-3">Em sala</button>
+                        <button class="bg-[#D9D9D9] p-2 font-[Inter] font-bold cursor-pointer rounded-[4px] hover:bg-green-500 ease-in-out duration-200 hover:text-white hover:border-solid hover:border-[1px] hover:border-black px-3" onclick="emsala()">Em sala</button>
                     </div>
                 </section>
             </section>
