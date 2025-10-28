@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aluno(a)</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <script src="JS/aluno.js"></script>
+    <style>
+        @font-face {
+            font-family: 'BlackOps';
+            src: url('fonts/BlackOpsOne-Regular.ttf');
+        }
+
+        @font-face {
+            font-family: 'Markazi';
+            src: url('fonts/MarkaziText-Roman-VF.ttf');
+        }
+
+        @font-face {
+            font-family: 'Kdam';
+            src: url('fonts/KdamThmorPro-Regular.ttf');
+        }
+
+        @font-face {
+            font-family: 'Mohave';
+            src: url('fonts/Mohave-VariableFont_wght.ttf');
+        }
+
+        #lista_fora div {
+            background-color: #D9D9D9;
+            align-content: center;
+            justify-items: center;
+            font-family: Inter;
+            font-weight: bold;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            text-align: left;
+            padding-left: 0.5rem;
+            font-size: 1.3em;
+            padding-top: 0.25rem /* 4px */;
+            padding-bottom: 0.25rem /* 4px */;
+        }
+    </style>
+</head>
+<body class="grid font-[Inter] bg-[#701717] h-[100dvh] border-solid border-[20px] border-[#C0C0C0]">
+    <div class="grid grid-rows-[auto_1fr_auto] border-solid border-[17px] border-[#C20000] justify-items-center gap-y-3">
+        <header class="bg-[#F5F5F5] w-[95%] text-center h-[76px] md:h-[148px] content-center font-[BlackOps] text-white m-5 justify-items-center">
+                <div class="grid py-[1.4%] px-[5%] content-center bg-[#A7A4A4]">
+                    <h2 class="font-[BlackOps] text-[1.2em] md:text-[2.3em] text-[#590101]">CONTROLE DE SAÍDA</h2>
+                    <div class="w-full h-[6px] bg-[#F3F823] rounded-full"></div>
+                </div>
+        </header>
+
+        <main class="grid grid-rows-[1fr_1fr] px-3 w-full items-center justify-items-center md:flex md:justify-center gap-y-8">
+            <section class="grid justify-items-center gap-y-3 h-full grid-rows-[auto_1fr] w-full">
+                <section class="bg-white w-[90%] items-center p-2 pl-4 h-auto">
+                    <div class="flex">
+                        <h2 class="font-[Inter] text-[0.9em] md:text-[1.2em] font-extrabold text-nowrap">DESEJA SAIR?
+                            <div class="w-full h-[6px] bg-[#ED3131] rounded-full"></div>
+                        </h2>
+                    </div>
+                </section>
+
+                <section class="grid p-2 md:p-4 w-[90%] bg-white border-solid border-[#EF3434] border-b-10 overflow-y-auto min-h-0 rounded-[8px] max-h-[150px] h-full sm:max-h-[240px] md:max-h-[460px] lg:max-h-[560px] pl-4 md:pl-8">
+                    <form class="grid pr-[5%] font-[Mohave] font-extrabold grid-rows-[auto_auto_1fr] gap-y-[6%] pt-[2%]" id="justificativa">
+                        <input type="submit" class="tracking-wider bg-[#FF3F3F] text-[1em] md:text-[1.5em] p-[1.7%] rounded-[5px] justify-self-start cursor-pointer hover:bg-[#cf3636]" value="SOLICITAR SAÍDA">
+                        <div class="flex">
+                            <h2 class="font-[Inter] text-[0.9em] md:text-[1.5em] font-extrabold tracking-wider">JUSTIFIQUE-SE:
+                                <div class="w-full h-[3px] bg-[#ED3131] rounded-full"></div>
+                            </h2>
+                        </div>  
+
+                        <div class="grid gap-y-[8%] px-[10%]">
+                            <div class="flex gap-x-[10%]">
+                                <input type="radio" name="opcao" value="banheiro" checked class="w-[5%] cursor-pointer">
+                                <label class="text-[1.1em] md:text-[1.5em] font-extrabold bg-[#D9D9D9] p-2 pl-[6%] w-full content-center">BANHEIRO</label>
+                            </div>
+
+                            <div class="flex gap-x-[10%]">
+                                <input type="radio" name="opcao" value="refeitorio" class="w-[5%] cursor-pointer">
+                                <label class="text-[1.1em] md:text-[1.5em] font-extrabold bg-[#D9D9D9] p-2 pl-[6%] w-full content-center">REFEITÓRIO</label>
+                            </div>
+
+                            <div class="flex gap-x-[10%]">
+                                <input type="radio" name="opcao" value="secretaria" class="w-[5%] cursor-pointer">
+                                <label class="text-[1.1em] md:text-[1.5em] font-extrabold bg-[#D9D9D9] p-2 pl-[6%] w-full content-center">SECRETARIA</label>
+                            </div>
+
+                            <div class="flex gap-x-[10%]">
+                                <input type="radio" name="opcao" value="outro" class="w-[5%] cursor-pointer">
+                                <label class="text-[1.1em] md:text-[1.5em] font-extrabold bg-[#D9D9D9] p-2 pl-[6%] w-full content-center">OUTRO...</label>
+                            </div>
+                        </div>
+                    </form>
+                </section>
+            </section>
+
+            <section class="grid justify-items-center gap-y-3 h-full grid-rows-[auto_1fr] w-full">
+                <section class="flex bg-white w-[90%] items-center pl-3 h-auto gap-x-2">
+                    <div class="grid">
+                        <h2 class="font-[Inter] text-[13px] sm:text-[20px] font-bold">ALUNOS FORA DA SALA</h2>
+                        <div class="w-full h-[6px] bg-[#ED3131] rounded-full"></div>
+                    </div>
+                    <img class="w-[3.2em]" src="img/school-icon.svg"> 
+                </section>
+
+                <section class="grid p-2 md:p-4 w-[90%] bg-white border-solid border-[#EF3434] border-b-10 h-full content-start overflow-y-auto min-h-0 rounded-[8px] max-h-[150px] md:max-h-[460px] lg:max-h-[560px] sm:max-h-[240px] pt-5 md:pt-4 gap-y-2" id="lista_fora">
+                </section>
+            </section>
+
+        </main>
+
+        <footer class="text-end w-full md:text-[30px] font-[Markazi] pr-8">
+            <h4>AXIS 4</h4>
+        </footer>
+    </div>
+    <script>
+        let h1 = document.getElementById("h1")
+        h1.innerText = "Olá Docente!"
+    </script>
+</body>
+</html>
