@@ -1,0 +1,19 @@
+{
+  "name": "classflow",
+  "version": "1.0.0",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "COMO RODAR O PROJETO BAIXADO\r Instalar todas as dependencias indicadas pelo package.json\r ### npm install",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "mysql": "^2.18.1",
+    "mysql2": "^3.15.3",
+    "sqlite3": "^5.1.7"
+  },
+  "keywords": []
+}
