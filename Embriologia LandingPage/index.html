@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page || Tailwind</title>
+  <link rel="shortcut icon" href="img/symbol.svg" type="x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <style>
+    #wp-extension {
+      display: none;
+    }
+
+    @font-face {
+      font-family: 'header';
+      src: url(fonts/Jersey15-Regular.ttf);
+    }
+
+    @font-face {
+      font-family: 'pixel';
+      src: url(fonts/PixelifySans-VariableFont_wght.ttf);
+    }
+
+    @font-face {
+      font-family: 'command';
+      src: url(fonts/consolas.ttf);
+    }
+
+    @keyframes subir {
+      0% {
+        transform: translateY(0);
+      }
+      25% {
+        transform: translateY(-7px);
+      }
+      75% {
+        transform: translateY(7px);
+      }
+      100% {
+        transform: translateY(0);
+      }
+    }
+
+    .animate-subir {
+      animation: subir 7s ease-in-out infinite;
+    }
+
+    summary::marker {
+      content: "";
+    }
+
+    @keyframes cursor {
+      0%, 100% {
+        border-color: transparent;
+      }
+      50% {
+        border-color: white;
+      }
+    }
+
+    .animate-cursor {
+      border-right: 4px solid white;
+      animation: cursor 1.5s infinite;
+    }
+
+    @keyframes blinkCursor {
+      50% {
+        border-right-color: transparent;
+      }
+    }
+
+    .animate-blinkCursor {
+      border-right: 0.2em solid #cad5e2;
+      animation:
+        typeAndDelete 4s steps(11) infinite,
+        blinkCursor 0.5s step-end infinite alternate;
+    }
+
+    .sobre {
+      font-family: 'Courier New', Courier, monospace;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    #competencias {
+      background-image: url("img/G1.svg");
+    }
+        
+
+  </style>
+</head>
+<body id="home" class="grid grid-rows-[70px_auto_auto] bg-green-100">
+<header class="grid h-auto sticky top-0 z-50 w-full">
+      <nav class="grid sm:grid-cols-[auto_1fr_1fr_1fr_1fr] backdrop-blur-[20px] justify-items-center items-center shadow-[0px_0px_30px] w-full gap-x-[10px] h-full border-solid border-[0.5px] border-black border-x-0 border-t-0 bg-pink-100 px-[1%] lg:px-[15px]">
+        <div class="grid items-center p-1.5 h-full gap-x-1.5 grid-cols-[auto_1fr_auto] pr-[3%]">
+          <img src="img/symbol.svg" class="w-14">
+          <h1 class="text-black text-[1.4em]"><strong>Embriologia</strong></h1>
+        </div>
+        <a href="#Sobre" class="text-black font-[header] text-[25px] hover:underline hover:scale-[1.05] cursor-pointer duration-200 ease-in-out hidden sm:inline">O que é</a>
+        <a href="#Recursos" class="text-black font-[header] text-[25px] hover:underline hover:scale-[1.05] cursor-pointer duration-200 ease-in-out hidden sm:inline">Fecundação</a>
+        <a href="#Exemplos" class="text-black font-[header] text-[25px] hover:underline hover:scale-[1.05] cursor-pointer duration-200 ease-in-out hidden sm:inline">Desenvolvimento</a>
+        <a href="#Instalação" class="text-black font-[header] text-[25px] hover:underline hover:scale-[1.05] cursor-pointer duration-200 ease-in-out hidden sm:inline">Diferentes áreas</a>
+      </nav>
+  </header>
+
+  <main class="grid grid-rows-[auto_auto_auto_auto_auto] lg:grid-rows-[auto_auto_auto_1000px_auto] w-full gap-y-[70px] ">
+    <!--Tailwind-->
+    <section class="grid pt-10 h-full justify-items-center grid-rows-[auto_auto]">
+          <div class="grid w-[270px] h-[270px] rounded-full justify-items-center items-center animate-subir drop-shadow-[10px_10px_10px]">
+              <img src="img/symbol.svg" class="grid max-w-[250px] drop-shadow-[10px_10px_10px] ">
+          </div>
+      <section class="grid h-full w-full items-center justify-items-center">
+        <h1 class="text-gray-700 font-[inter] text-[45px] animate-cursor pr-1 pt-3"><strong>Embriologia</strong></h1>
+        <p id="Sobre" class="text-[#6e6e6e] font-[header] font-[350] text-[35px]">Trabalho</p><p class="text-[#adadad] font-[header] font-[350] text-[35px]">de</p><p class="text-[#ABABAB] font-[pixel] text-[35px]  animate-cursor pr-[5px] ">Biologia</p>
+      </section>
+    </section>
+
+    <!--Sobre-->
+    <section class="grid grid-rows-[auto_auto] grid-cols-[auto_1fr] rounded-[4px] bg-gray-200 h-auto mx-[5%] w-auto max-w-[1000px] px-[3px] pb-[3px] items-center justify-self-center">
+      <h1 class="text-red-600 text-[19px] sm:text-[35px] sobre self-center ml-[5px]">O que é</h1>
+      <section class="grid col-start-2 justify-self-end gap-x-[20px] items-center pr-[2%]">
+        <div class="h-[14px] w-[14px] rounded-full bg-red-500"></div>
+      </section>
+      <section class="bg-white grid col-span-2 justify-items-center p-[16px]">
+        <p class="text-black text-[14px] sm:text-[30px] sobre">
+         A embriologia é uma área da biologia que estuda o desenvolvimento embrionário dos organismos vivos. Ou seja, o processo de formação do embrião a partir de uma única célula, o zigoto, que originará um novo ser vivo<span id="Recursos" class="animate-blinkCursor">.</span>
+        </p>
+      </section>
+    </section>
+
+    <!--Recursos-->
+    <section class="grid mx-[5%] grid-rows-[auto_auto] justify-items-center items-center gap-y-[30px] h-auto w-auto bg-slate-300 pb-3">
+      <h1 class="text-black font-[inter] text-[35px] pr-1 pt-3"><strong>Alguns Recursos</strong></h1>
+      <section class="grid justify-items-center lg:grid-cols-3 gap-x-[30px] gap-y-[30px]">
+        <div class="grid grid-rows-[auto_auto] lg:grid-rows-[auto_auto] max-w-[370px] max-h-[400px] bg-white w-auto h-auto border-solid border-2 border-gray-400">
+          <div class="grid bg-white rounded-[10px] p-[20px] grid-rows-[auto_auto] gap-y-[7px] ">
+            <h1 class="text-black font-[inter] text-[35px] pr-1 pt-3"><strong>Cores P3</strong></h1>
+            <p class= "font-[inter] text-gray-600 ">A paleta de cores agora usa cores mais vibrantes e de ampla gama, sem que você precise entender o que isso significa.</p>
+          </div>
+          <img src="img/cores.svg" class="rounded-t-[15px] px-3">
+        </div>
+        <div class="grid grid-rows-[auto_auto] lg:grid-rows-[auto_auto] max-w-[370px] max-h-[400px] bg-white w-auto h-auto border-solid border-2 border-gray-400">
+          <div class="grid bg-white rounded-[10px] p-[20px] grid-rows-[auto_auto] gap-y-[7px] ">
+            <h1 class="text-black font-[inter] text-[35px] pr-1 pt-3"><strong>Modo escuro</strong></h1>
+            <p class= "font-[inter] text-gray-600 ">Se você não gosta de queimar a retina, basta colocá-lo na frente de qualquer cor para aplicá-la no modo escuro. <span><strong>dark:</strong></span></p>
+          </div>
+          <img src="img/dark-mode.svg" class="rounded-t-[15px] px-3">
+        </div>
+        <div class="grid grid-rows-[auto_auto] lg:grid-rows-[auto_auto] max-w-[370px] max-h-[400px] bg-white w-auto h-auto border-solid border-2 border-gray-400">
+          <div class="grid bg-white rounded-[10px] p-[20px] grid-rows-[auto_auto] gap-y-[7px] ">
+            <h1 class="text-black font-[inter] text-[35px] pr-1 pt-3"><strong>Design responsivo</strong></h1>
+            <p class= "font-[inter] text-gray-600 ">Basta colocar um tamanho de tela na frente de literalmente qualquer utilitário para aplicá-lo em um ponto de interrupção específico.</p>
+          </div>
+          <img src="img/design.svg" class="rounded-t-[15px] px-3">
+        </div>
+      </section>
+    </section>
+
+    <!--Exemplos-->
+    <section id="Exemplos" class="grid bg-slate-500 h-auto w-auto pt-[20%] pb-[30%] justify-items-center items-center gap-y-[50px] lg:pb-0 lg:pt-0 lg:border-solid lg:border-[4px] lg:border-black lg:border-x-0 lg:border-t-0">
+      <h1 class="text-white font-[inter] text-[40px] font-medium grid lg:self-end text-center">Sites que usam Tailwind</h1>
+      <section class="grid gap-y-4 lg:grid-cols-[1fr_1fr_1fr] items-center justify-items-center gap-[10px] sm:gap-[25px] lg:self-start">
+
+        <a class="grid grid-rows-[200px_auto] cursor-pointer hover:scale-[1.02] duration-600 ease-in-out max-w-[340px]" href="https://dev.to/" target="_blank">
+          <div class="w-auto h-auto  bg-white rounded-t-[15px]"><img src="img/tailwind-svgrepo-com.svg" class="w-full h-full"></div>
+          <div class="grid bg-[#1a1a1a] rounded-b-[15px] p-[20px] grid-rows-[auto_auto] gap-y-[7px] h-[201.5px]">
+            <h1 class= "text-white font-[inter] text-[23px] font-bold text-center ">Tailwind CSS (Site Oficial)</h1>
+            <p class= "text-white font-[inter] text-[px] text-center">O próprio site do Tailwind usa o framework em sua totalidade, e você pode observar a simplicidade, performance e flexibilidade no design.
+            </p>
+          </div>
+        </a>
+
+        <a class="grid grid-rows-[200px_auto] cursor-pointer hover:scale-[1.02] duration-600 ease-in-out max-w-[340px]" href="https://dev.to/" target="_blank">
+          <div class="w-auto h-auto  bg-black rounded-t-[15px]"><img src="img/Dev.to.svg" class="w-full h-full"></div>
+          <div class="grid bg-[#1a1a1a] rounded-b-[15px] p-[20px] grid-rows-[auto_auto] gap-y-[7px] h-[201.5px]">
+            <h1 class= "text-white font-[inter] text-[23px] font-bold text-center ">DEV.to</h1>
+            <p class= "text-white font-[inter] text-[px] text-center">A famosa comunidade de desenvolvedores usa Tailwind CSS em seu design, criando uma interface simples e de fácil navegação, focada na experiência do usuário.</p>
+          </div>
+        </a>
+
+        <a class="grid grid-rows-[200px_auto] cursor-pointer hover:scale-[1.02] duration-600 ease-in-out max-w-[340px]" href="https://dev.to/" target="_blank">
+          <div class="w-auto h-auto  bg-white rounded-t-[15px]"><img src="img/frontendmentor.svg" class="w-full h-full rounded-t-[15px]"></div>
+          <div class="grid bg-[#1a1a1a] rounded-b-[15px] p-[20px] grid-rows-[auto_auto] gap-y-[7px] h-[201.5px]">
+            <h1 class= "text-white font-[inter] text-[23px] font-bold text-center ">Frontend Mentor</h1>
+            <p class= "text-white font-[inter] text-[17px] text-center">Este site oferece desafios de design para desenvolvedores e usa o Tailwind CSS para uma experiência de desenvolvimento ágil.</p>
+          </div>
+        </a>
+      </section>
+    </section>
+
+    <!--Instalação-->
+    <section id="Instalação" class="grid grid-rows-[auto_auto] gap-y-25 lg:gap-y-10">
+      <section class="grid gap-y-[3%] gap-x-[3%] h-auto lg:grid-rows-[auto_auto] mx-[3%] lg:pr-[5%] lg:pl-[13%] lg:mx-0">
+        <h1 class="text-black font-[inter] text-[35px] pr-1 py-3 row-start-1"><strong>Instalação</strong></h1>
+        <hr class="lg:col-start-1 row-start-2">
+        <p class= "font-[inter] text-gray-600 py-3 lg:row-start-2 lg:col-start-1">Use o Play CDN para experimentar o Tailwind diretamente no navegador, sem precisar de nenhuma etapa de compilação. O Play CDN foi projetado apenas para fins de desenvolvimento e não se destina à produção.</p>
+        <section class="grid grid-rows-[auto_auto] grid-cols-[auto_1fr] rounded-[4px] bg-[#333] h-auto  w-auto px-[3px] pb-[3px] items-center justify-self-center lg:col-start-2 lg:row-start-2">
+          <h1 class="text-gray-400 text-[13px] lg:text-[19px] sobre self-center ml-[5px]">index.html</h1>
+          <section class="grid col-start-2 grid-cols-3 justify-self-end gap-x-[20px] pr-[5px] items-center">
+            <div class="h-[14px] w-[14px] rounded-full bg-[#1A1A1A]"></div>
+            <div class="h-[14px] w-[14px] rounded-full bg-[#1A1A1A]"></div>
+            <div class="h-[14px] w-[14px] rounded-full bg-[#1A1A1A]"></div>
+          </section>
+          <section class="bg-[#1A1A1A] grid col-span-2 p-[16px] h-auto overflow-x-scroll sm:overflow-hidden lg:overflow-x-scroll">
+            <p class="text-sky-300 text-[14px] lg:text-[20px] text-left sobre">
+              <span class="text-slate-400"><</span><span class="text-pink-400">head</span><span class="text-slate-400">></span>
+            </p>
+            <p class="text-sky-300 text-[14px] lg:text-[20px] sobre pl-7">
+              <span class="text-slate-400"><</span><span class="text-pink-400">script</span> <span class="text-slate-300">src</span> <span class="text-slate-400">=</span><span>"https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"<span class="text-slate-400">></span></span><span class="text-slate-400"><</span><span class="text-slate-400">/</span><span class="text-pink-400">script</span><span class="text-slate-400">></span>
+            </p>
+            <p class="text-sky-300 text-[14px] lg:text-[20px] text-left sobre pb-4">
+              <span class="text-slate-400"><</span><span class="text-slate-400">/</span><span class="text-pink-400">head</span><span class="text-slate-400">></span>
+            </p>
+          </section>
+        </section>   
+      </section>
+      <section class="grid gap-y-[3%] gap-x-[3%] h-auto lg:grid-rows-[auto_auto] mx-[3%] lg:pr-[5%] lg:pl-[13%] lg:mx-0">
+        <h1 class="text-black font-[inter] text-[35px] pr-1 py-3 row-start-1"><strong>Tente adicionar algum CSS personalizado</strong></h1>
+        <hr class="lg:col-start-1 row-start-2">
+        <p class= "font-[inter] text-gray-600 py-3 lg:row-start-2 lg:col-start-1">Use o Play CDN para experimentar o Tailwind diretamente no navegador, sem precisar de nenhuma etapa de compilação. O Play CDN foi projetado apenas para fins de desenvolvimento e não se destina à produção.</p>
+        <section class="grid grid-rows-[auto_auto] grid-cols-[auto_1fr] rounded-[4px] bg-[#333] h-auto  w-auto px-[3px] pb-[3px] items-center justify-self-center lg:col-start-2 lg:row-start-2">
+          <h1 class="text-gray-400 text-[13px] lg:text-[19px] sobre self-center ml-[5px]">index.html</h1>
+          <section class="grid col-start-2 grid-cols-3 justify-self-end gap-x-[20px] pr-[5px] items-center">
+            <div class="h-[14px] w-[14px] rounded-full bg-[#1A1A1A]"></div>
+            <div class="h-[14px] w-[14px] rounded-full bg-[#1A1A1A]"></div>
+            <div class="h-[14px] w-[14px] rounded-full bg-[#1A1A1A]"></div>
+          </section>
+          <section class="bg-[#1A1A1A] grid col-span-2 p-[16px] h-auto overflow-x-scroll sm:overflow-hidden lg:overflow-x-scroll">
+            <p class="text-sky-300 text-[14px] lg:text-[20px] text-left sobre">
+              <span class="text-slate-400"><</span><span class="text-pink-400">head</span><span class="text-slate-400">></span>
+            </p>
+            <p class="text-sky-300 text-[14px] lg:text-[20px] sobre pl-7">
+              <span class="text-slate-400"><</span><span class="text-pink-400">script</span> <span class="text-slate-300">src</span> <span class="text-slate-400">=</span><span>"https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"<span class="text-slate-400">></span></span><span class="text-slate-400"><</span><span class="text-slate-400">/</span><span class="text-pink-400">script</span><span class="text-slate-400">></span>
+
+              <p class="text-sky-300 text-[14px] lg:text-[20px] text-left sobre pl-7">
+                <span class="text-slate-400"><</span><span class="text-pink-400">style</span> <span class="text-slate-300">type</span><span class="text-slate-400">=</span><span>"text/tailwindcss"</span><span class="text-slate-400">></span>
+                <br>
+                <span class="text-slate-300 pl-7">@theme {</span>
+                <br>
+                <span class="pl-14">--color-clifford:</span> <span class="text-white">#da373d</span><span class="text-slate-400 font-[inter] pl-1">;</span>
+                <br>
+                <span class="text-slate-300 pl-7">}</span>
+                <br>
+                <span class="text-slate-400"><</span><span class="text-slate-400">/</span><span class="text-pink-400">style</span><span class="text-slate-400">></span>
+              </p>
+            </p>
+            <p class="text-sky-300 text-[14px] lg:text-[20px] text-left sobre pb-4">
+              <span class="text-slate-400"><</span><span class="text-slate-400">/</span><span class="text-pink-400">head</span><span class="text-slate-400">></span>
+            </p>
+          </section>
+        </section>   
+      </section>
+    </section>
+  </main>
+
+  <footer class="grid h-auto p-[40px] gap-y-[20px] w-full mt-[90px] text-black">
+    <p class=" text-center">® Copyright <b><i>Guilherme Cava</i></b> Todos os direitos reservados</p>
+    <p class=" grid justify-self-center">Designed by Guilherme Cava</p>
+  </footer>
+</body>
+</html>
