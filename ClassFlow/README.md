@@ -45,3 +45,5 @@ Com a implementação da solução, espera-se reduzir as interrupções frequent
 	f) Desenvolvimento da solução: elaboração do projeto de acordo com todas as informações coletadas para sua finalização e entrega.
   _
 Também é necessário deixar destacado que é importante levar em consideração os seguintes pontos: necessidades do público-alvo e pesquisar possíveis soluções.
+
+__O IP QUE FOI UTILIZADO NO PROJETO, FOI O DA MÁQUINA QUE EU ESTAVA UTILIZANDO COMO SERVIDOR. O RECOMENDADO É QUE SE UTILIZE O LOCALHOST!__
