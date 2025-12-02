@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <style>
+        @font-face {
+            font-family: 'BlackOps';
+            src: url('fonts/BlackOpsOne-Regular.ttf');
+        }
+
+        @font-face {
+            font-family: 'Markazi';
+            src: url('fonts/MarkaziText-Roman-VF.ttf');
+        }
+
+        @font-face {
+            font-family: 'Kdam';
+            src: url('fonts/KdamThmorPro-Regular.ttf');
+        }
+    </style>
+
+
+</head>
+<body class="grid font-[Inter] bg-[#701717] h-[100dvh] border-solid border-[20px] border-[#C0C0C0]">
+    <section class="grid grid-rows-[auto_1fr_auto] border-solid border-[17px] border-[#C20000] justify-items-center gap-y-10 h-full">
+        <header class="bg-[#F5F5F5] w-[95%] text-center p-2 md:h-[148px] content-center font-[BlackOps] text-white m-5 text-[1.5em] sm:text-[3em] justify-items-center">
+            <div class="flex justify-items-center bg-[#A7A4A4] justify-center px-[10%]">
+                <h1 class="grid my-[3%] text-[#590101]">Leave the Class
+                    <div class="w-full h-[6px] bg-[#F3F823] rounded-full"></div>
+                </h1>
+            </div>
+        </header>
+
+        <main class="w-full px-5 max-w-[460px] items-center">
+            <section class="grid grid-rows-[auto_1fr] bg-white text-center justify-items-center gap-y-10">
+                <div class="grid w-full px-[30%] gap-y-2 pt-9">
+                    <h2 class="font-[Markazi] text-[2em]">LOGIN</h2>
+                    <div class="w-full h-[6px] bg-[#ED3131] rounded-full"></div>
+                </div>
+                
+                <form class="grid gap-y-6 md:text-[20px] w-full justify-items-center" id="loginForm">
+                    <h3 class="font-[Kdam]">Identificação</h3>
+                    <input type="text" required class="bg-[#D9D9D9] rounded-full text-center h-8 w-45 md:h-12 md:w-[230px]" id="textbox" name="nome">
+                    <input type="submit" class="bg-[#FF3F3F] font-[Markazi] text-white p-1 px-5 rounded-[3px] text-[1.5em] cursor-pointer hover:bg-[#cf3636] mb-6" value="Avançar" id="submit">
+                </form>
+
+            </section>
+        </main>
+
+        <footer class="text-end w-full md:text-[30px] font-[Markazi] pr-8 text-white">
+            <h4>AXIS 4</h4>
+        </footer>
+    </section>
+    <script src="JS/script.js"></script>
+</body>
+</html>
