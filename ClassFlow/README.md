@@ -47,4 +47,5 @@ Com a implementação da solução, espera-se reduzir as interrupções frequent
 Também é necessário deixar destacado que é importante levar em consideração os seguintes pontos: necessidades do público-alvo e pesquisar possíveis soluções.
 
 __O IP QUE FOI UTILIZADO NO PROJETO, FOI O DA MÁQUINA QUE EU ESTAVA UTILIZANDO COMO SERVIDOR. O RECOMENDADO É QUE SE UTILIZE O LOCALHOST!__
+
 __USE O SEGUINTE COMANDO: npm install sqlite3 express cors path__
