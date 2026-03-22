@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="./img/house.svg" type="x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guilherme Cava | Dev Frontend</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+      #wp-extension {
+        display: none;
+      }
+
+      #root {
+        cursor: url('https://www.rw-designer.com/cursor-view/10017.png'), auto;
+      }
+
+      a, button {
+        cursor: url('https://www.rw-designer.com/cursor-view/22111.png'), pointer;
+      }
+
+      textarea, input, .editable {
+        cursor: url('https://www.rw-designer.com/cursor-view/10018.png'), text;
+      }
+
+      @font-face {
+        font-family: 'header';
+        src: url("./fonts/Jersey15-Regular.ttf") format("truetype");
+      }
+
+      @font-face {
+        font-family: 'pixel';
+        src: url("./fonts/PixelifySans-VariableFont_wght.ttf");
+      }
+
+      @font-face {
+        font-family: 'command';
+        src: url("./fonts/consolas.ttf");
+      }
+
+      @keyframes subir {
+        0% {
+          transform: translateY(0);
+        }
+        25% {
+          transform: translateY(-7px);
+        }
+        75% {
+          transform: translateY(7px);
+        }
+        100% {
+          transform: translateY(0);
+        }
+      }
+
+      .animate-subir {
+        animation: subir 7s ease-in-out infinite;
+      }
+
+      summary::marker {
+        content: "";
+      }
+
+      @keyframes cursor {
+        0%, 100% {
+          border-color: transparent;
+        }
+        50% {
+          border-color: white;
+        }
+      }
+
+      .animate-cursor {
+        border-right: 4px solid white;
+        animation: cursor 1.5s infinite;
+      }
+
+      @keyframes blinkCursor {
+        50% {
+          border-right-color: transparent;
+        }
+      }
+
+      .animate-blinkCursor {
+        border-right: 0.2em solid #008000;
+        animation:
+          typeAndDelete 4s steps(11) infinite,
+          blinkCursor 0.5s step-end infinite alternate;
+      }
+
+      .sobre {
+        font-family: 'Courier New', Courier, monospace;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+          
+    </style>
+  </head>
+  <body id="home">
+    <div id="root" class="grid grid-rows-[auto_auto_auto] bg-[url(/gifs/starsGIF.gif)] justify-items-center min-h-screen gap-y-[clamp(2rem,5vw,5rem)]"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
