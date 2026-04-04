@@ -1,9 +1,17 @@
 import maps from '../assets/img/maps.svg'
 import backBlack from '../assets/img/backBlack.svg'
+import { useEffect } from 'react';
+import ScrollReveal from 'scrollreveal';
 
 export function Map() {
+    useEffect(() => {
+        ScrollReveal().reveal('#map', {
+            duration: 1200,
+            delay: 500,
+        });
+    }, []);
     return (
-        <section className="grid grid-rows-[auto_auto]">
+        <section className="grid grid-rows-[auto_auto]" id='map'>
             <section className="grid grid-rows-[auto_auto] grid-cols-[auto_1fr] pb-[3px] rounded-[6px] lg: bg-[#E8E8E8] h-auto w-[clamp(21rem,32vw,40rem)]  items-center justify-self-center lg:justify-self-start">
                 <img src={maps} className="w-[clamp(1.1rem,1.1vw,2.1rem)] self-center"/>
                 <section className="grid col-start-2  justify-self-end gap-x-[20px] pr-[5px] items-center">

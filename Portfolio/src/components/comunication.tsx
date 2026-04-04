@@ -2,10 +2,18 @@ import file from '../assets/img/file.svg'
 import backBlack from '../assets/img/backBlack.svg'
 import zap from '../assets/img/zap.svg'
 import email from '../assets/img/email.svg'
+import { useEffect } from 'react';
+import ScrollReveal from 'scrollreveal';
 
 export function Comunication() {
+    useEffect(() => {
+        ScrollReveal().reveal('#comunication', {
+            duration: 1200,
+            delay: 200,
+        });
+    }, []);
     return (
-        <section className="grid grid-rows-[auto_auto]">
+        <section className="grid grid-rows-[auto_auto]" id='comunication'>
             <section className="grid grid-rows-[auto_auto] grid-cols-[auto_1fr] rounded-[6px] bg-[#E8E8E8] h-auto w-[clamp(21rem,32vw,40rem)]  items-center justify-self-center lg:justify-self-start">
                 <img src={file} className="w-[clamp(1.1rem,1.1vw,2.1rem)] self-center"/>
                 <section className="grid col-start-2  justify-self-end gap-x-[20px] pr-[5px] items-center">

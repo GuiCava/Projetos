@@ -2,10 +2,20 @@ import back from "../assets/img/back.svg"
 import backBlack from "../assets/img/backBlack.svg"
 import coding from "../assets/gifs/Coding.gif"
 import notes from "../assets/img/notes.svg"
+import { useEffect } from "react"
+import ScrollReveal from "scrollreveal"
+
 
 export function Window() {
+    useEffect(() => {
+        ScrollReveal().reveal('#window', {
+            duration: 1000,
+            origin: 'left',
+            distance: '70%'
+        });
+    }, []);
     return (
-        <section className="grid grid-rows-[auto_auto_auto] grid-cols-[auto_1fr] rounded-[4px] bg-[#333] h-auto w-[clamp(21rem,32vw,40rem)] px-[3px] pb-[3px] items-center justify-self-center lg:justify-self-end lg:row-span-2">
+        <section className="grid grid-rows-[auto_auto_auto] grid-cols-[auto_1fr] rounded-[4px] bg-[#333] h-auto w-[clamp(21rem,32vw,40rem)] px-[3px] pb-[3px] items-center justify-self-center lg:justify-self-end lg:row-span-2 load-hidden" id="window">
             <h1 className="text-[#eee] font-[monospace]  font-light text-[clamp(1.1rem,1.1vw,2.1rem)] sobre self-center ml-[5px]">...</h1>
             <section className="grid col-start-2  justify-self-end gap-x-[20px] pr-[5px] items-center">
                 <img src={back} className="w-[clamp(1.4rem,1.2vw,2.2rem)]"/>
