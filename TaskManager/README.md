@@ -20,20 +20,14 @@ Interface gráfica no estilo dark mode que permite adicionar, remover e visualiz
 
 ## Instalação
 
-1. **Clone o repositório:**
-   ```bash
-   git clone https://github.com/seu-usuario/gerenciador-de-tarefas.git
-   cd gerenciador-de-tarefas
-   ```
-
-2. **Instale a dependência:**
+1. **Instale a dependência:**
    ```bash
    pip install customtkinter
    ```
 
-3. **Execute a aplicação:**
+2. **Execute a aplicação:**
    ```bash
-   python gen2.py
+   python TaskManager.py
    ```
 
 ## Como Usar
@@ -54,7 +48,7 @@ Interface gráfica no estilo dark mode que permite adicionar, remover e visualiz
 
 ```
 gerenciador-de-tarefas/
-└── gen2.py   # Código principal da aplicação
+└── TaskManager.py   # Código principal da aplicação
 ```
 
 ## Observações
