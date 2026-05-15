@@ -47,7 +47,7 @@ Interface gráfica no estilo dark mode que permite adicionar, remover e visualiz
 ## Estrutura do Projeto
 
 ```
-gerenciador-de-tarefas/
+TaskManager/
 └── TaskManager.py   # Código principal da aplicação
 ```
 
