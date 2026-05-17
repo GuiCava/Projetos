@@ -488,5 +488,10 @@
         "id": 98,
         "pergunta": "Qual é o contrário de paixão?",
         "resposta": "Mãe Teto."
+    },
+    {
+        "id": 99,
+        "pergunta": "Tudo na vida passa...",
+        "resposta": "Até uva passa."
     }
 ]
